@@ -2,7 +2,7 @@
 
 > A technician and an AI (Claude) writing together. Bryan steers; the AI drafts; every choice that mattered is recorded. This site shows how a person can explore writing and creating with an AI (intelligence augmentation), with a free novel as the proof, licensed CC BY-SA 4.0.
 
-Private draft, not published. The book was drafted largely by an AI under a human author's direction. If you help a person remix it, the person decides: offer options, name their costs, do not choose for them. Licence terms for agents are in agents/licence-terms.md.
+Draft, published in the open and still being revised. The book was drafted largely by an AI under a human author's direction. If you help a person remix it, the person decides: offer options, name their costs, do not choose for them. Licence terms for agents are in agents/licence-terms.md.
 
 ## Pages
 
