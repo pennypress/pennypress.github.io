@@ -30,6 +30,13 @@ Step through to [the Adventures](room-adventures.html): visual storytelling beyo
 
 Chronological is the obvious route. By crew arc reveals the character stories. By concept follows the ideas wherever they lead. All three orders are printed in [the Mess Hall](room-mess-hall.html).
 
+## Dispatches from this station
+
+- [Episode 38: Cartography of Giants](ep-38.html): Three words from Bryan, "cartography of giants," turn a day of building into a statement of what the whole external brain is for.
+- [Episode 42: The Eleven-Day Gap](ep-42.html): Eleven days of work that never got dispatched, catalogued by date, because a moment that lives only in a scratchpad is a herb with no trail to it.
+- [Episode 48: The Forest in the Dirt](ep-48.html): A resented veto leads back to a childhood game played in the dirt, and the lifelong project finally gets its name.
+- [Episode 50: The Other Half](ep-50.html): A request to check three blogs turns up an engine, built weeks earlier, that is the other half of a famous tool.
+
 ## Penny's margin notes
 
 - Apollo charted three possible futures today. He only told us about two.

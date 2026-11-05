@@ -30,6 +30,9 @@ Tva's four instruments, built in [Episode 30](ep-30.html): small interactive sim
 ## Echoes from other rooms
 
 - [Episode 36: The Skin of the Ship](ep-36.html): 42 textures. Hover-reveal backdrops. A font slider called OPTICS. And the ship started meditating on paradox between whispers.
+- [Episode 44: The Hill K Foundation Marathon](ep-44.html): Two sessions, twenty-four commits, and the question of what a long day tests: the person, the model, or the architecture.
+- [Episode 45: The Flywheel Spin-Up](ep-45.html): A project is renamed in one sentence, and a single broad query surfaces eight tool candidates from sessions the narrator never saw.
+- [Episode 51: Reachability](ep-51.html): A small navigation complaint becomes a night-long argument with the word "existing." The capability was always there; the door was missing.
 
 ## Penny's margin notes
 

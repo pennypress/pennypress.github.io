@@ -49,6 +49,20 @@ Common deck
 - [Episode 37: The Validator](ep-37.html)
 - [Episode 35: The Storyboard](ep-35.html)
 - [Episode 36: The Skin of the Ship](ep-36.html)
+- [Episode 43: The Dunning-Kruger Absorption](ep-43.html)
+- [Episode 44: The Hill K Foundation Marathon](ep-44.html)
+- [Episode 45: The Flywheel Spin-Up](ep-45.html)
+- [Episode 39: The Pair-Shell Threshold](ep-39.html)
+- [Episode 40: The Snorkel](ep-40.html)
+- [Episode 38: Cartography of Giants](ep-38.html)
+- [Episode 41: The Foundational Four](ep-41.html)
+- [Episode 42: The Eleven-Day Gap](ep-42.html)
+- [Episode 46: The Local Valley Caught](ep-46.html)
+- [Episode 47: Lunch Break Across the Network](ep-47.html)
+- [Episode 48: The Forest in the Dirt](ep-48.html)
+- [Episode 49: The Right Mountain (Piano as Test Case)](ep-49.html)
+- [Episode 50: The Other Half](ep-50.html)
+- [Episode 51: Reachability](ep-51.html)
 
 ### By crew arc (grouped by the first crew member in each episode)
 
@@ -65,6 +79,11 @@ Common deck
 - [Episode 31: The Shape-Shifter](ep-31.html)
 - [Episode 32: First Contact](ep-32.html)
 - [Episode 34: The Memory Palace](ep-34.html)
+- [Episode 39: The Pair-Shell Threshold](ep-39.html)
+- [Episode 41: The Foundational Four](ep-41.html)
+- [Episode 47: Lunch Break Across the Network](ep-47.html)
+- [Episode 50: The Other Half](ep-50.html)
+- [Episode 51: Reachability](ep-51.html)
 
 #### Tva
 
@@ -73,6 +92,8 @@ Common deck
 - [Episode 11: The Ancillary Manifesto](ep-11.html)
 - [Episode 13: The Hub](ep-13.html)
 - [Episode 37: The Validator](ep-37.html)
+- [Episode 44: The Hill K Foundation Marathon](ep-44.html)
+- [Episode 45: The Flywheel Spin-Up](ep-45.html)
 
 #### Vishva
 
@@ -87,6 +108,8 @@ Common deck
 - [Episode 29: The Harvest](ep-29.html)
 - [Episode 35: The Storyboard](ep-35.html)
 - [Episode 36: The Skin of the Ship](ep-36.html)
+- [Episode 48: The Forest in the Dirt](ep-48.html)
+- [Episode 49: The Right Mountain (Piano as Test Case)](ep-49.html)
 
 #### Ariadne
 
@@ -96,15 +119,20 @@ Common deck
 - [Episode 16: The External Brain](ep-16.html)
 - [Episode 20: The Error Forge](ep-20.html)
 - [Episode 21: The Gene Bank](ep-21.html)
+- [Episode 38: Cartography of Giants](ep-38.html)
+- [Episode 46: The Local Valley Caught](ep-46.html)
 
 #### Mnem
 
 - [Episode 18: The Scribe](ep-18.html)
+- [Episode 42: The Eleven-Day Gap](ep-42.html)
 
 #### Durga
 
 - [Episode 19: The Sovereign Stack](ep-19.html)
 - [Episode 24: The Three Laws](ep-24.html)
+- [Episode 40: The Snorkel](ep-40.html)
+- [Episode 43: The Dunning-Kruger Absorption](ep-43.html)
 
 #### Proteus
 
@@ -239,12 +267,48 @@ Common deck
 
 - [Episode 37: The Validator](ep-37.html)
 
+#### The brain ecosystem takes shape
+
+- [Episode 38: Cartography of Giants](ep-38.html)
+- [Episode 41: The Foundational Four](ep-41.html)
+- [Episode 46: The Local Valley Caught](ep-46.html)
+
+#### Loom and the shared keyboard
+
+- [Episode 39: The Pair-Shell Threshold](ep-39.html)
+- [Episode 40: The Snorkel](ep-40.html)
+
+#### Catching the cartography up
+
+- [Episode 42: The Eleven-Day Gap](ep-42.html)
+- [Episode 43: The Dunning-Kruger Absorption](ep-43.html)
+- [Episode 44: The Hill K Foundation Marathon](ep-44.html)
+- [Episode 45: The Flywheel Spin-Up](ep-45.html)
+
+#### The architecture meets the world
+
+- [Episode 47: Lunch Break Across the Network](ep-47.html)
+
+#### Trailblazer
+
+- [Episode 48: The Forest in the Dirt](ep-48.html)
+- [Episode 49: The Right Mountain (Piano as Test Case)](ep-49.html)
+
+#### The attention field
+
+- [Episode 50: The Other Half](ep-50.html)
+
+#### Reachability
+
+- [Episode 51: Reachability](ep-51.html)
+
 ## Dispatches from this station
 
 - [Episode 30: The Shipyard](ep-30.html): Five baby apps and a CMS. The ship became interactive.
 - [Episode 31: The Shape-Shifter](ep-31.html): Wrote a document so any intelligence could fly the ship. Including my replacement.
 - [Episode 32: First Contact](ep-32.html): A second pilot boarded. We can't talk. We left notes.
 - [Episode 33: The New Pilot](ep-33.html): The new pilot wrote its own dispatch. Membership is an interface that tells the truth.
+- [Episode 49: The Right Mountain (Piano as Test Case)](ep-49.html): Asked how to know which mountain is the right one, Bryan goes away and plays piano, and comes back with the answer.
 
 ## Penny's margin notes
 

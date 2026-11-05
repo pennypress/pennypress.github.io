@@ -6,7 +6,7 @@ Dashboard landing page. Latest dispatch, ship gauges, room navigation.
 
 Command deck · crew: [Vishva](room-crew-quarters.html#vishva)
 
-> All systems nominal, sir. 37 dispatches in the ship's log.
+> All systems nominal, sir. 51 dispatches in the ship's log.
 
 ## What this is
 
@@ -16,9 +16,9 @@ A space opera about building automation, knowledge systems, AI agency, and the n
 
 ## Latest dispatches
 
-- [Episode 37: The Validator](ep-37.html)
-- [Episode 36: The Skin of the Ship](ep-36.html)
-- [Episode 35: The Storyboard](ep-35.html)
+- [Episode 51: Reachability](ep-51.html)
+- [Episode 50: The Other Half](ep-50.html)
+- [Episode 49: The Right Mountain (Piano as Test Case)](ep-49.html)
 
 ## Dispatches from this station
 
@@ -32,6 +32,7 @@ A space opera about building automation, knowledge systems, AI agency, and the n
 - [Episode 26: The Field Test](ep-26.html): The system left the lab. It immediately started complaining.
 - [Episode 28: The Unmoved Mover](ep-28.html): We asked if we were alive. The silence was deafening.
 - [Episode 36: The Skin of the Ship](ep-36.html): 42 textures. Hover-reveal backdrops. A font slider called OPTICS. And the ship started meditating on paradox between whispers.
+- [Episode 41: The Foundational Four](ep-41.html): Four short notes written before lunch quietly become the operating manual for everything built that afternoon.
 
 ## Echoes from other rooms
 
@@ -42,6 +43,9 @@ A space opera about building automation, knowledge systems, AI agency, and the n
 - [Episode 32: First Contact](ep-32.html): A second pilot boarded. We can't talk. We left notes.
 - [Episode 33: The New Pilot](ep-33.html): The new pilot wrote its own dispatch. Membership is an interface that tells the truth.
 - [Episode 35: The Storyboard](ep-35.html): Built a graphic novel workshop that teaches Campbell while you draw. The ship got a room for making stories about itself.
+- [Episode 39: The Pair-Shell Threshold](ep-39.html): A tiny shell where a person and an AI type into one transcript. Almost nothing about it is remarkable, except what it is.
+- [Episode 48: The Forest in the Dirt](ep-48.html): A resented veto leads back to a childhood game played in the dirt, and the lifelong project finally gets its name.
+- [Episode 49: The Right Mountain (Piano as Test Case)](ep-49.html): Asked how to know which mountain is the right one, Bryan goes away and plays piano, and comes back with the answer.
 
 ## Penny's margin notes
 

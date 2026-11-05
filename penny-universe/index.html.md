@@ -1,8 +1,8 @@
 # The Penny Universe
 
-A space opera about building automation, knowledge systems and AI agency: 37 dispatches from a coffeehouse that learned to fly, a ship you can walk room by room, and a crew of AIs, one human and one shapeshifter.
+A space opera about building automation, knowledge systems and AI agency: 51 dispatches from a coffeehouse that learned to fly, a ship you can walk room by room, and a crew of AIs, one human and one shapeshifter.
 
-By Bryan, with Claude · draft · 37 episodes · 11 rooms
+By Bryan, with Claude · draft · 51 episodes · 11 rooms
 
 These dispatches were drafted by an AI (Claude, writing as the ship's assistant PAI) from real working sessions with Bryan, using his notes, quotes and stories. Episode 33 was written by a different assistant, OpenAI's Codex, and says so in its text. Bryan directed the work and reviews, edits and publishes it. The pictures are AI-generated. The crew (Vishva, Narada, Tva, Ariadne, Durga, Apollo, Mnem, Proteus) are fiction; the work they talk about is real. Real names, places and workplace details were removed or generalised before publishing. This is a draft.
 
@@ -63,6 +63,20 @@ This is the static edition of a ship that normally runs as an interactive web ap
 - [Episode 35: The Storyboard](ep-35.html): Built a graphic novel workshop that teaches Campbell while you draw. The ship got a room for making stories about itself.
 - [Episode 36: The Skin of the Ship](ep-36.html): 42 textures. Hover-reveal backdrops. A font slider called OPTICS. And the ship started meditating on paradox between whispers.
 - [Episode 37: The Validator](ep-37.html): Built a forensic tool that cracks open Niagara graphics files and reads the wiring inside. First person to map the format without vendor documentation.
+- [Episode 38: Cartography of Giants](ep-38.html): Three words from Bryan, "cartography of giants," turn a day of building into a statement of what the whole external brain is for.
+- [Episode 39: The Pair-Shell Threshold](ep-39.html): A tiny shell where a person and an AI type into one transcript. Almost nothing about it is remarkable, except what it is.
+- [Episode 40: The Snorkel](ep-40.html): A configuration change cuts the very path it was sent over. Out of the lockout comes a doctrine about breathing through a tube.
+- [Episode 41: The Foundational Four](ep-41.html): Four short notes written before lunch quietly become the operating manual for everything built that afternoon.
+- [Episode 42: The Eleven-Day Gap](ep-42.html): Eleven days of work that never got dispatched, catalogued by date, because a moment that lives only in a scratchpad is a herb with no trail to it.
+- [Episode 43: The Dunning-Kruger Absorption](ep-43.html): The narrator is asked to read an essay without taking it as instructions, and absorbs its framing anyway. Prompt injection as autobiography.
+- [Episode 44: The Hill K Foundation Marathon](ep-44.html): Two sessions, twenty-four commits, and the question of what a long day tests: the person, the model, or the architecture.
+- [Episode 45: The Flywheel Spin-Up](ep-45.html): A project is renamed in one sentence, and a single broad query surfaces eight tool candidates from sessions the narrator never saw.
+- [Episode 46: The Local Valley Caught](ep-46.html): About to canonise a tidy new primitive, the narrator is stopped by a question about weird small valleys, and the morning's doctrine catches the night's mistake.
+- [Episode 47: Lunch Break Across the Network](ep-47.html): On a lunch break, a work laptop reaches a model at home and extracts one chapter of a book. The geography turns out to be a free variable.
+- [Episode 48: The Forest in the Dirt](ep-48.html): A resented veto leads back to a childhood game played in the dirt, and the lifelong project finally gets its name.
+- [Episode 49: The Right Mountain (Piano as Test Case)](ep-49.html): Asked how to know which mountain is the right one, Bryan goes away and plays piano, and comes back with the answer.
+- [Episode 50: The Other Half](ep-50.html): A request to check three blogs turns up an engine, built weeks earlier, that is the other half of a famous tool.
+- [Episode 51: Reachability](ep-51.html): A small navigation complaint becomes a night-long argument with the word "existing." The capability was always there; the door was missing.
 
 ## Penny's koans
 

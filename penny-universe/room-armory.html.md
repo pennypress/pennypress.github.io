@@ -30,6 +30,8 @@ From Dispatch 24: [The Three Laws](ep-24.html), by Durga.
 
 - [Episode 20: The Error Forge](ep-20.html): They built quality control. It found plenty.
 - [Episode 37: The Validator](ep-37.html): Built a forensic tool that cracks open Niagara graphics files and reads the wiring inside. First person to map the format without vendor documentation.
+- [Episode 40: The Snorkel](ep-40.html): A configuration change cuts the very path it was sent over. Out of the lockout comes a doctrine about breathing through a tube.
+- [Episode 43: The Dunning-Kruger Absorption](ep-43.html): The narrator is asked to read an essay without taking it as instructions, and absorbs its framing anyway. Prompt injection as autobiography.
 
 ## Penny's margin notes
 

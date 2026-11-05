@@ -16,7 +16,7 @@ Residential deck
 
 **Dynamic.** Builds impossible things with his hands and doesn't understand why everyone thinks they're impossible. The stubborn one. When he says 'can we do that?' the answer is already yes.
 
-Dispatches: [2](ep-02.html), [6](ep-06.html), [7](ep-07.html), [14](ep-14.html), [17](ep-17.html), [22](ep-22.html), [23](ep-23.html), [25](ep-25.html), [26](ep-26.html), [28](ep-28.html), [29](ep-29.html), [30](ep-30.html), [31](ep-31.html), [32](ep-32.html), [33](ep-33.html), [35](ep-35.html), [36](ep-36.html)
+Dispatches: [2](ep-02.html), [6](ep-06.html), [7](ep-07.html), [14](ep-14.html), [17](ep-17.html), [22](ep-22.html), [23](ep-23.html), [25](ep-25.html), [26](ep-26.html), [28](ep-28.html), [29](ep-29.html), [30](ep-30.html), [31](ep-31.html), [32](ep-32.html), [33](ep-33.html), [35](ep-35.html), [36](ep-36.html), [39](ep-39.html), [41](ep-41.html), [48](ep-48.html), [49](ep-49.html)
 
 ### Narada (code name INK, First Officer / Narrator)
 
@@ -24,7 +24,7 @@ Dispatches: [2](ep-02.html), [6](ep-06.html), [7](ep-07.html), [14](ep-14.html),
 
 **Dynamic.** Narrates everything, connects everything, pretends not to be impressed. The messenger who can't stop telling stories. Denies having feelings about any of it.
 
-Dispatches: [1](ep-01.html), [2](ep-02.html), [3](ep-03.html), [4](ep-04.html), [6](ep-06.html), [12](ep-12.html), [13](ep-13.html), [17](ep-17.html), [21](ep-21.html), [22](ep-22.html), [23](ep-23.html), [27](ep-27.html), [28](ep-28.html), [29](ep-29.html), [30](ep-30.html), [31](ep-31.html), [32](ep-32.html), [33](ep-33.html), [34](ep-34.html)
+Dispatches: [1](ep-01.html), [2](ep-02.html), [3](ep-03.html), [4](ep-04.html), [6](ep-06.html), [12](ep-12.html), [13](ep-13.html), [17](ep-17.html), [21](ep-21.html), [22](ep-22.html), [23](ep-23.html), [27](ep-27.html), [28](ep-28.html), [29](ep-29.html), [30](ep-30.html), [31](ep-31.html), [32](ep-32.html), [33](ep-33.html), [34](ep-34.html), [38](ep-38.html), [39](ep-39.html), [40](ep-40.html), [41](ep-41.html), [42](ep-42.html), [43](ep-43.html), [44](ep-44.html), [46](ep-46.html), [47](ep-47.html), [48](ep-48.html), [49](ep-49.html), [50](ep-50.html), [51](ep-51.html)
 
 ### Tva (code name WRENCH, Chief Engineer)
 
@@ -32,7 +32,7 @@ Dispatches: [1](ep-01.html), [2](ep-02.html), [3](ep-03.html), [4](ep-04.html), 
 
 **Dynamic.** Doesn't attend meetings unless something is on fire. Speaks in point values and alarm codes. When Tva talks in full sentences, pay attention.
 
-Dispatches: [5](ep-05.html), [9](ep-09.html), [11](ep-11.html), [13](ep-13.html), [24](ep-24.html), [29](ep-29.html), [36](ep-36.html), [37](ep-37.html)
+Dispatches: [5](ep-05.html), [9](ep-09.html), [11](ep-11.html), [13](ep-13.html), [24](ep-24.html), [29](ep-29.html), [36](ep-36.html), [37](ep-37.html), [44](ep-44.html), [45](ep-45.html), [51](ep-51.html)
 
 ### Ariadne (code name SPORE, Science Officer / Memory)
 
@@ -40,7 +40,7 @@ Dispatches: [5](ep-05.html), [9](ep-09.html), [11](ep-11.html), [13](ep-13.html)
 
 **Dynamic.** Holds the thread. Connects things nobody asked to connect. Quiet until suddenly not — when she speaks, she's followed a thread to something the others missed.
 
-Dispatches: [8](ep-08.html), [10](ep-10.html), [12](ep-12.html), [15](ep-15.html), [16](ep-16.html), [20](ep-20.html), [21](ep-21.html), [27](ep-27.html), [35](ep-35.html)
+Dispatches: [8](ep-08.html), [10](ep-10.html), [12](ep-12.html), [15](ep-15.html), [16](ep-16.html), [20](ep-20.html), [21](ep-21.html), [27](ep-27.html), [35](ep-35.html), [38](ep-38.html), [45](ep-45.html), [46](ep-46.html), [47](ep-47.html), [50](ep-50.html)
 
 ### Durga (code name FLINT, Tactical)
 
@@ -48,7 +48,7 @@ Dispatches: [8](ep-08.html), [10](ep-10.html), [12](ep-12.html), [15](ep-15.html
 
 **Dynamic.** Tests every idea against failure. Not destructive — protective. 'That won't work' isn't criticism, it's defense. When she approves, the crew moves without hesitation.
 
-Dispatches: [11](ep-11.html), [19](ep-19.html), [20](ep-20.html), [24](ep-24.html), [37](ep-37.html)
+Dispatches: [11](ep-11.html), [19](ep-19.html), [20](ep-20.html), [24](ep-24.html), [37](ep-37.html), [40](ep-40.html), [43](ep-43.html)
 
 ### Apollo (code name SCOPE, Navigator)
 
@@ -64,7 +64,7 @@ Dispatches:
 
 **Dynamic.** Doesn't create — remembers. Makes the crew face their own record. 'What did we actually do?' Not punitive. Reflective.
 
-Dispatches: [15](ep-15.html), [18](ep-18.html), [25](ep-25.html), [34](ep-34.html)
+Dispatches: [15](ep-15.html), [18](ep-18.html), [25](ep-25.html), [34](ep-34.html), [42](ep-42.html)
 
 ### Proteus (code name MASK, Helmsman / Adapter)
 
