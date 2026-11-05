@@ -12,7 +12,9 @@ If you help a person remix this work, the person decides: offer options, name th
 - [Claims ledger: The Tools to See the Options](https://pennypress.github.io/essays/the-tools-to-see-the-options.claims.html.md): Every claim in "The Tools to See the Options" and how well it was checked.
 - [The Space Beneath the Arch](https://pennypress.github.io/essays/the-space-beneath-the-arch.html.md): On the human chin as a spandrel, after the essay tradition of Stephen Jay Gould (not his writing). Science drawn from a 2026 paper.
 - [Claims ledger: The Space Beneath the Arch](https://pennypress.github.io/essays/the-space-beneath-the-arch.claims.html.md): Every claim in "The Space Beneath the Arch" and how well it was checked.
-- [Essays](https://pennypress.github.io/essays/index.html.md): Penny Press essays: the Compassion bush and the Science shelf, drafts in the open.
+- [Publishing Day](https://pennypress.github.io/essays/publishing-day.html.md): The day Penny Press went public: a gate that stopped looking, an editor before the door, Daniel Miessler's security floor, and why the cutscene is the reward.
+- [Claims ledger: Publishing Day](https://pennypress.github.io/essays/publishing-day.claims.html.md): Every claim in "Publishing Day" and how well it was checked.
+- [Essays](https://pennypress.github.io/essays/index.html.md): Penny Press essays: the Compassion bush, the Science shelf and Dispatches, drafts in the open.
 
 ## Stories
 

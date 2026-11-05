@@ -14,3 +14,7 @@ One root essay and branches that each grow from a single sentence in it. Order o
 ## Science
 
 - [The Space Beneath the Arch](the-space-beneath-the-arch.html), draft 1: On the human chin as a spandrel, after the essay tradition of Stephen Jay Gould (not his writing). Science drawn from a 2026 paper.
+
+## Dispatches
+
+- [Publishing Day](publishing-day.html): The day Penny Press went public: a gate that stopped looking, an editor before the door, Daniel Miessler's security floor, and why the cutscene is the reward.
