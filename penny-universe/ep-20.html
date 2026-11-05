@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="They built quality control. It found plenty.">
+<title>Episode 20: The Error Forge · Penny Press</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="alternate" type="text/markdown" href="ep-20.html.md">
+</head><body>
+<a class="skip" href="#main">Skip to the text</a>
+<div class="draftbar">Draft: these pages are drafts, revised in the open. Every draft number is shown.</div>
+<header class="masthead"><div class="wrap">
+<a class="brand" href="../index.html">Penny Press</a>
+<p class="motto">One penny, one seat, one conversation</p>
+<nav aria-label="Main"><ul><li><a href="../essays/index.html">Essays</a></li><li><a href="../stories/index.html" aria-current=page>Stories</a></li><li><a href="../tools/index.html">Tools</a></li><li><a href="../agents/index.html">For agents</a></li></ul></nav></div></header>
+<main id="main"><div class="wrap">
+<p class="crumb"><a href="../stories/index.html">Stories</a> / <a href="index.html">The Penny Universe</a></p><h1>The Error Forge</h1><p class="sub">In Which Every Bug Becomes a Lesson, a Karpathy Paper Maps to a Farm-Town Pipeline, and a System Learns to Score Its Own Homework</p><p class="meta">By Bryan, with Claude · <span class="status">draft</span> · Episode 20 · 2026-04-01 · crew: Ariadne, Durga · arc: Quality</p><article class="essay"><p>The interesting thing about error is that it's a signal.</p>
+<p>Not the error itself — the error is just a thing that went wrong. The signal is in the <em>pattern</em> of errors. Which books score low? Which sections fail? Which model produces chaff and which produces kernels? When you accumulate enough errors, you stop seeing failures and start seeing a map of your own incompetence. And that map, properly read, is the best teacher you'll ever have.</p>
+<p>Andrej Karpathy published "Autoresearch" in the spring of 2026 — a three-file pattern for self-improving AI research: <code>prepare.py</code> (assemble the data), <code>train.py</code> (run the experiment), <code>program.md</code> (the instructions that guide everything). Three files. One eval metric. A fixed time budget. The system runs, scores itself, and improves in a loop.</p>
+<p>Bryan read the paper and saw his own pipeline.</p>
+<p>The Feed Bin is <code>prepare.py</code> — it assembles book chunks and queues them for processing. The Fabric prompts are <code>train.py</code> — they run the extraction. The Winnow is the eval metric — it scores the output on a 0-100 scale. And the model router is the improvement loop — it takes chaff, requeues it with a different combine, and tries again.</p>
+<p>Karpathy's pattern was general. Bryan's implementation was specific. But the architecture was isomorphic, and the fact that Bryan built it independently — before reading the paper — told him something about the shape of the solution space. When two people solve the same problem the same way without talking to each other, the solution is probably load-bearing. It's not a style choice. It's the shape of the problem asserting itself.</p>
+<p>Daniel Miessler had a parallel framework: the Universal Improvement Cycle. Map your goals. Execute. Log everything. Collect failures. Improve. Repeat. Miessler was an early influence on Bryan's AI-augmented workflow — the Fabric tool that Baby Claude runs extract_wisdom through is Miessler's creation. The improvement cycle is the philosophy behind it.</p>
+<p>We combined all three: Karpathy's three-file architecture, Miessler's improvement cycle, and our own Error Forge practice.</p>
+<p>The Error Forge isn't a script. It's a discipline. When the pipeline produces bad output, you don't just fix it. You <em>diagnose</em> it. You ask: what category of failure is this? Is it a scoring failure (the Winnow missed something), a classification failure (the annotator mistyped a passage), a vocabulary failure (the seeds don't cover this book's terminology), or a structural failure (the script can't handle this edge case)?</p>
+<p>Each category has a different fix. Scoring failures mean the Winnow needs new rules. Classification failures mean the genre profile needs new anchors or types. Vocabulary failures mean the seeds file needs enrichment — either manual or Baby Claude-generated. Structural failures mean the Python code needs surgery.</p>
+<p>The discipline is: run, score, diagnose, fix, re-run, compare. Every cycle, the pipeline gets better. Every cycle, the improvement is measurable — not in feelings, not in vibes, but in numbers. The Winnow score went up or it didn't. The atomic note count went up or it didn't. The concept density improved or it didn't.</p>
+<p>Stephen Jay Gould's ghost attends every scoring session. Gould wrote <em>The Mismeasure of Man</em> — the definitive takedown of the idea that complex qualities can be reduced to single numbers. IQ. Skull volume. SAT scores. Each one a political act disguised as a measurement, each one confidently wrong about what it was measuring.</p>
+<p>The Winnow scores measure format compliance, not wisdom depth. A perfectly formatted bullet list of shallow observations scores higher than a brilliant insight written as a paragraph. We know this. We built the warning into the system: the score measures <em>our</em> criteria, not the book's value. A low-scoring passage might be the most important one in the chapter — it just doesn't have bullet points.</p>
+<p>Gould would say: every metric is a lens, and every lens has a blind spot. The Error Forge's discipline is to always ask what the score <em>doesn't</em> measure, not just what it does.</p>
+<p>April 1st was the day we ran the Error Forge on five books in sequence. Smart Notes first — the diagnostic run. 39 concepts, zero relationships, 5 atomic notes. Terrible scores. The forge cycle produced: seed vocabulary (39→72 concepts), relationship detection (0→61), and the atomic extractor v2 (5→100 notes by removing the exposition blanket-exclude and adding contrast/process detection).</p>
+<p>Building a Second Brain second — same cycle, different problems. Forte uses common-word jargon the way Allen does. "Inbox" isn't a technical term to a naive text scanner. "PARA" isn't an acronym until you know it's an acronym. Seed generation fixed it: 85 concepts, 111 relationships, 100 atomic notes.</p>
+<p>Atomic Note-Taking third. Then Extreme Ownership — Jocko Willink's military vocabulary needed its own seeds. Then The 7 Habits — the second pass, and the one that showed improvement most clearly: 61→106 concepts, and 615 relationships that hadn't existed on the first run.</p>
+<p>Five hundred atomic notes. Fifty PAI elaborations. And a pipeline that had, measurably, gotten better at reading through the act of reading.</p>
+<p>The reading-specific Winnow variant — <code>winnow_reading.py</code> — did the library-wide scan that same day. Four thousand and forty-four Wisdom files across forty books. Average score: 18 out of 100. The scores were brutal and honest:</p>
+<p>FACTS sections: 63/100. The regex extraction works.
+REFERENCES sections: 51/100. Decent.
+QUOTES sections: 5/100. The regex patterns are too narrow. They catch quotes that start with quotation marks but miss everything else. Fix: pending.
+HABITS sections: 35/100. Needs an LLM, not a regex.
+Synthesis sections: 0/100. All of them. Zero. Every synthesis section across forty books was a TODO placeholder that had never been filled. Claude's synthesis tier had never run.</p>
+<p>That zero was the most useful number in the entire audit. It told us where the biggest improvement was hiding. Not in tuning the regex for QUOTES (though that needs fixing too). Not in sharpening the format hygiene (though that helps). In running the synthesis tier — the expensive, Claude-powered pass that does the thinking the regex can't.</p>
+<p>The Error Forge reframes failure as fuel. Every zero is a direction to move. Every chaff score is a diagnostic. Every gap in the Winnow audit is a feature request written in the language of measured disappointment.</p>
+<p>Bryan grew up on a farm. The Error Forge is what farming teaches you about systems: the crop doesn't lie. If the yield is low, the soil is wrong, or the seed is wrong, or the weather is wrong. You don't blame the crop. You diagnose the system and fix what you can fix. Next season, the yield is better. The season after that, better still. The forge is slow. The forge is honest. The forge works.</p>
+<p>Run. Score. Diagnose. Fix. Re-run. Compare.</p>
+<p>The pipeline that reads books about learning is learning to read books better, and the proof is in the numbers.</p></article><p class="small">Written by Claude (as the ship&#x27;s assistant PAI) from real working sessions with Bryan. Bryan reviews, edits and publishes. Details that identify real people or places were removed. Draft.</p><p class="endlinks"><a href="ep-19.html">&larr; Episode 19</a> · <a href="index.html">The ship</a> · <a href="ep-21.html">Episode 21 &rarr;</a></p>
+</div></main>
+<footer><div class="wrap">
+<p><span class="badge">CC BY-SA 4.0</span> Share it, remix it, sell it; credit the author by first name and keep your remix under the same licence. <a href="../LICENSE.txt">Full text</a>. <a href="../agents/index.html">How assistants may use it</a>.</p>
+<p>Made by a person steering an AI. Bylines are first names only.</p>
+<p class="support">Feedback: <a href="mailto:odinkral@gmail.com">odinkral@gmail.com</a> · Tip jar (optional): <a href="https://ko-fi.com/vanilabs" rel="noopener">https://ko-fi.com/vanilabs</a></p>
+</div></footer>
+</body></html>

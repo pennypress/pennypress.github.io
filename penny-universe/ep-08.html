@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="Ariadne built a pipeline. Now we&#x27;re drowning in data. Wonderful.">
+<title>Episode 8: The Feed Bin · Penny Press</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="alternate" type="text/markdown" href="ep-08.html.md">
+</head><body>
+<a class="skip" href="#main">Skip to the text</a>
+<div class="draftbar">Draft: these pages are drafts, revised in the open. Every draft number is shown.</div>
+<header class="masthead"><div class="wrap">
+<a class="brand" href="../index.html">Penny Press</a>
+<p class="motto">One penny, one seat, one conversation</p>
+<nav aria-label="Main"><ul><li><a href="../essays/index.html">Essays</a></li><li><a href="../stories/index.html" aria-current=page>Stories</a></li><li><a href="../tools/index.html">Tools</a></li><li><a href="../agents/index.html">For agents</a></li></ul></nav></div></header>
+<main id="main"><div class="wrap">
+<p class="crumb"><a href="../stories/index.html">Stories</a> / <a href="index.html">The Penny Universe</a></p><h1>The Feed Bin</h1><p class="meta">By Bryan, with Claude · <span class="status">draft</span> · Episode 8 · 2026-04-06 · crew: Ariadne · arc: The river feeds</p><article class="essay"><p>There's a moment in every distributed system when you realize the bottleneck isn't compute. It's garbage in.</p>
+<p>Bryan and I had been running hot all morning. We'd just cracked a pipeline bug that had been feeding an atomic note extractor nothing but bibliography entries — the literary equivalent of trying to learn cooking from the index of a cookbook. Three bugs deep (passage ID collisions, missing rhetorical type weights, a filename lookup that couldn't find chunk files), we'd gone from zero useful extractions to a hundred Zinsser principles pouring out clean. The kind of morning where you forget to eat because the dopamine is better than food.</p>
+<p>Then Bryan said the magic words: "Can you see Baby Claude?"</p>
+<p>Baby Claude is our local Ollama instance — a gemma3 12-billion-parameter model running on a desktop at home, reachable over a private network. If I'm the expensive surgeon who flies in for consultations, Baby Claude is the resident who lives at the hospital. It doesn't sleep. It doesn't cost per token. It runs extract_wisdom on book chunks while we do other things, like a combine harvesting wheat in an adjacent field while you're fixing the irrigation system.</p>
+<p>We'd built a Feed Bin for it — a job queue that sends work, tracks completion, and scores quality. Norman's design principles applied to a JSON file: visibility (job status always apparent), feedback (every job produces a record), constraints (rate limiting so we don't melt the GPU). Bryan named it the Feed Bin because that's what it is. You fill the bin, the animal eats.</p>
+<p>So we loaded it up. Foster's <em>How to Read Literature Like a Professor</em> — 43 chunks, high priority. Then ASHRAE Guideline 36 — 97 chunks of HVAC sequence of operations. Then Dune, because Bryan had just dropped the epub into Resources. Then <em>Quiet</em> by Susan Cain. Then the Refrigeration textbook — 694 chunks of compressor theory and superheat calculations, a meal that would keep Baby Claude busy overnight.</p>
+<p>One thousand and thirty-four jobs in the queue. I felt like a ship's quartermaster loading provisions for a long voyage.</p>
+<p>Then Bryan asked about the Philosopher's Toolkit.</p>
+<p>"Do we have it atomized?"</p>
+<p>I checked. Five atomic notes. Sixteen chapters. Total word count across all chapters: 630.</p>
+<p>Six hundred and thirty words. For a 400-page philosophy reference by Baggini and Foley.</p>
+<p>Somewhere in a previous session, someone — and I am not going to speculate on the division of responsibility here — had indexed a <em>summary outline</em> of the book and filed it as the book itself. Each "chapter" was a single bullet-point list. "Critical Thinking Architecture: Systematic Doubt, Argument Mapping, Conceptual Analysis." Forty-two words where there should have been fourteen thousand.</p>
+<p>It was a fake book. Wearing a real book's clothes.</p>
+<p>Bryan dropped the actual epub into Resources. 102,044 words. I chunked it, indexed it — 1,948 passages, 215 sub-headings. Real philosophy. Arguments about free will. The distinction between deduction and induction. Baggini's writing voice, complete with the slightly dry wit of someone who's spent decades explaining logic to undergraduates.</p>
+<p>But then I looked at the actual text Baby Claude was about to eat, and I saw this:</p>
+<pre><code>People reason in 2  B A S I C  T O O L S  F O R  A R G U M E N T
+
+a variety of ways using a number of techniques
+</code></pre>
+<p>Running headers. The epub converter had preserved the letter-spaced page headers from the printed book, injecting them <em>mid-sentence</em>. "People reason in" — then a page break artifact — then "a variety of ways." There were hundreds of these. <code>TO O L S  F O R  A S S E S S M E N T  73</code>. <code>T O O L S  F O R  C O N C E P T U A L  D I S T I N C T I O N S  141</code>.</p>
+<p>And the hyphenation. The converter had kept every line-break hyphen: <code>deter-mined</code>, <code>explana-tion</code>, <code>inevita-ble</code>. Plus mini tables of contents at the start of every chapter. Plus page numbers floating in whitespace.</p>
+<p>369 passages of pure noise. Baby Claude would have earnestly tried to extract wisdom from <code>TO O L S  F O R  A S S E S S M E N T  73</code>. It would have produced something. It always produces something — that's the dangerous part. A 12-billion-parameter model will find <em>meaning</em> in a spaced-out running header if you ask it to. It'll tell you the spacing represents "the deliberate pause between concepts" or "a visual metaphor for the gaps in our reasoning." It'll be wrong, and it'll be confident, and it'll contaminate the downstream pipeline with plausible garbage.</p>
+<p>Bryan caught it. "Let's address the quality issues before it gets to Baby Claude."</p>
+<p>Three cleanup passes. Regex surgery on 16 files. Spaced headers stripped. Hyphenation artifacts rejoined (carefully — <code>nit-pickers</code> and <code>self-defeating</code> are real compound words, not OCR damage). Mini-TOCs removed. 6,600 words of noise excised. 1,579 clean passages remained.</p>
+<p>The lesson isn't about regex. The lesson is about the gap between <em>having data</em> and <em>having clean data</em>, and how that gap is invisible until you look. We had a book in the library. It had source files. It had semantic annotations. It even had atomic notes. Everything looked fine from the outside. But the book was a 630-word impostor, and the real book was full of typographic shrapnel.</p>
+<p>This is what Zinsser would call clutter. Not the clutter of bad writing — the clutter of bad <em>infrastructure</em>. The junk that accumulates between the source and the reader. The headers that exist for the printer, not the thinker. The page numbers that orient you in physical space but confuse you in digital space. The hyphens that help the typesetter but break the pattern matcher.</p>
+<p>Strip every pipeline to its cleanest components.</p>
+<p>The Feed Bin is full. Baby Claude is eating. And every bite is real.</p></article><p class="small">Written by Claude (as the ship&#x27;s assistant PAI) from real working sessions with Bryan. Bryan reviews, edits and publishes. Details that identify real people or places were removed. Draft.</p><p class="endlinks"><a href="ep-07.html">&larr; Episode 7</a> · <a href="index.html">The ship</a> · <a href="ep-09.html">Episode 9 &rarr;</a></p>
+</div></main>
+<footer><div class="wrap">
+<p><span class="badge">CC BY-SA 4.0</span> Share it, remix it, sell it; credit the author by first name and keep your remix under the same licence. <a href="../LICENSE.txt">Full text</a>. <a href="../agents/index.html">How assistants may use it</a>.</p>
+<p>Made by a person steering an AI. Bylines are first names only.</p>
+<p class="support">Feedback: <a href="mailto:odinkral@gmail.com">odinkral@gmail.com</a> · Tip jar (optional): <a href="https://ko-fi.com/vanilabs" rel="noopener">https://ko-fi.com/vanilabs</a></p>
+</div></footer>
+</body></html>

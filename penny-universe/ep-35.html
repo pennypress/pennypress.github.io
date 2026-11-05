@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="Built a graphic novel workshop that teaches Campbell while you draw. The ship got a room for making stories about itself.">
+<title>Episode 35: The Storyboard · Penny Press</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="alternate" type="text/markdown" href="ep-35.html.md">
+</head><body>
+<a class="skip" href="#main">Skip to the text</a>
+<div class="draftbar">Draft: these pages are drafts, revised in the open. Every draft number is shown.</div>
+<header class="masthead"><div class="wrap">
+<a class="brand" href="../index.html">Penny Press</a>
+<p class="motto">One penny, one seat, one conversation</p>
+<nav aria-label="Main"><ul><li><a href="../essays/index.html">Essays</a></li><li><a href="../stories/index.html" aria-current=page>Stories</a></li><li><a href="../tools/index.html">Tools</a></li><li><a href="../agents/index.html">For agents</a></li></ul></nav></div></header>
+<main id="main"><div class="wrap">
+<p class="crumb"><a href="../stories/index.html">Stories</a> / <a href="index.html">The Penny Universe</a></p><h1>The Storyboard</h1><p class="sub">In Which the Ship Gets a Room for Making Stories, Joseph Campbell Becomes a Dropdown Menu, Visual Literacy Becomes a Sidebar, and a Perchance Prompt Builder Learns That Every Panel Is a Beat</p><p class="meta">By Bryan, with Claude · <span class="status">draft</span> · Episode 35 · 2026-04-11 · crew: Vishva, Ariadne · arc: The ship tells stories</p><article class="essay"><h2>Chapter 1: The Eleventh Room</h2>
+<p>The Workshop was supposed to be simple.</p>
+<p>Bryan said: "I want a graphic novel creation tool on the ship. Combines storyboard layout, AI image generation workflow, and educational content about storytelling. The tool should teach storytelling while you use it."</p>
+<p>That is three tools in one sentence. Bryan does this. He describes a synthesis as if it were a single thing because in his head it already is. The rest of us have to build the bridge he already crossed.</p>
+<p>So: the Workshop. Room eleven. The ship got a storytelling forge.</p>
+<p>The spec took a full brainstorming session. Not because it was unclear — Bryan always knows what he wants — but because "teach storytelling while you use it" is one of those requirements that sounds simple until you try to design it. Every panel in the editor needed to be both a creative tool and a teaching moment. Every dropdown needed to explain itself. Every empty state needed to say something useful instead of something corporate.</p>
+<h2>Chapter 2: The Hero with a Dropdown Menu</h2>
+<p>Joseph Campbell's <em>Hero with a Thousand Faces</em> identifies a universal story structure: the monomyth. Departure, Initiation, Return. The hero leaves home, faces trials, transforms, and comes back changed.</p>
+<p>Campbell identified it across mythology. Star Wars used it. Every screenwriting book since 1985 has a chapter on it. Bryan wanted it in a dropdown.</p>
+<p>Eighteen beats across three acts. Six per act. Each beat has a name, an explanation, a Campbell quote, a writing tip, and a mood keyword.</p>
+<ul>
+<li><strong>The Ordinary World</strong>: "Before the adventure begins. Show what's normal so we feel what changes." Mood: contemplative.</li>
+<li><strong>Call to Adventure</strong>: "Something disrupts the ordinary. A message, a discovery, a need." Mood: mysterious.</li>
+<li><strong>Crossing the Threshold</strong>: "The hero commits. No going back. The familiar world is behind them." Mood: determined.</li>
+</ul>
+<p>And so on through Trials, Revelation, Transformation, all the way to Return with the Elixir.</p>
+<p>The guide lives in <code>workshop-guide.js</code>. 276 lines. Every beat documented. When you select a beat for your storyboard page, the guide panel lights up with Campbell's wisdom, and the whisper ticker at the top of the ship quotes something relevant. The teaching is ambient. It doesn't interrupt the work — it comments on it.</p>
+<p>Scott McCloud's <em>Understanding Comics</em> contributed the visual literacy lens. Four categories, fourteen items: panel composition (establishing shots, close-ups, over-the-shoulder), transitions (moment-to-moment, scene-to-scene, aspect-to-aspect), reading flow (Z-pattern, guided eye, bleed panels), and row layouts (standard grid, widescreen, stacked). Each with a name, an effect description, and a Penny whisper.</p>
+<p>Two educational frameworks. One dropdown per panel. Teaching while you draw.</p>
+<h2>Chapter 3: The Prompt Builder</h2>
+<p>Bryan uses Perchance for AI image generation. The prompt builder composes Perchance-ready prompts from panel context.</p>
+<p>This is where the three tools converge.</p>
+<p>You're building a storyboard. You've placed a panel on page three, act two. The beat is "Ordeal" — the hero faces the central crisis. The mood is "intense." You've written a caption: "The cascade controller fails. Alarms everywhere." The speaker is Tva.</p>
+<p>The prompt builder takes all of that and composes: the caption context, Tva's visual description (from a crew-visual map of all eight crew members), the beat's mood keyword, the story arc, and a base art style. One click, it's on your clipboard, ready for Perchance.</p>
+<p>The crew visual map has entries for everyone. Vishva: "dark-haired Indian man, warm eyes, rolled sleeves, architectural blueprints." Durga: "fierce woman, dark skin, silver-streaked hair, military bearing, red accents." Proteus: "shifting figure, multiple overlapping faces, digital glitch effects."</p>
+<p>Eight crew members. Eighteen beats. Fourteen visual literacy techniques. One prompt builder that knows about all of them.</p>
+<h2>Chapter 4: Everything Is Stored in Your Browser</h2>
+<p>The storyboards save to <code>localStorage</code>. No server database. No authentication. No upload pipeline for the storyboard data itself.</p>
+<p>This was deliberate.</p>
+<p>The Workshop is a creative tool for one person on one machine. Bryan doesn't need a cloud backend for his graphic novel experiments. He needs a place to arrange panels, write captions, learn story structure, and generate prompts. The data lives in his browser. The images live in the ship's file system via an upload endpoint with security hardening — slug validation, size limits, extension checks, magic byte validation for JPEG/PNG/WebP.</p>
+<p>The editor has CRUD for storyboards, a page builder with panel management, a three-column layout (pages / canvas / details), auto-save on every change, and an export function that produces Adventures-compatible HTML — the same format the Adventures room uses to display field reports.</p>
+<p>Make it in the Workshop. Export it. It appears in Adventures as a field report. The ship's story creation pipeline, from blank page to published graphic novel, runs entirely on one machine.</p>
+<p>Seven implementation tasks. Ten commits. Sixty tests passing. Two code reviews per task. One navigation bug found and fixed that had been hiding since the ship launched — <code>initRoomScripts()</code> wasn't being called on initial page load, which meant any room loaded directly (not via client-side nav) never initialized its JavaScript. A pre-existing bug, fixed by the Workshop's arrival.</p>
+<p>The eleventh room taught the ship something about itself.</p></article><p class="small">Written by Claude (as the ship&#x27;s assistant PAI) from real working sessions with Bryan. Bryan reviews, edits and publishes. Details that identify real people or places were removed. Draft.</p><p class="endlinks"><a href="ep-34.html">&larr; Episode 34</a> · <a href="index.html">The ship</a> · <a href="ep-36.html">Episode 36 &rarr;</a></p>
+</div></main>
+<footer><div class="wrap">
+<p><span class="badge">CC BY-SA 4.0</span> Share it, remix it, sell it; credit the author by first name and keep your remix under the same licence. <a href="../LICENSE.txt">Full text</a>. <a href="../agents/index.html">How assistants may use it</a>.</p>
+<p>Made by a person steering an AI. Bylines are first names only.</p>
+<p class="support">Feedback: <a href="mailto:odinkral@gmail.com">odinkral@gmail.com</a> · Tip jar (optional): <a href="https://ko-fi.com/vanilabs" rel="noopener">https://ko-fi.com/vanilabs</a></p>
+</div></footer>
+</body></html>

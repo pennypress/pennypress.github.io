@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="Durga built a security layer. Because we obviously needed more layers.">
+<title>Episode 19: The Sovereign Stack · Penny Press</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="alternate" type="text/markdown" href="ep-19.html.md">
+</head><body>
+<a class="skip" href="#main">Skip to the text</a>
+<div class="draftbar">Draft: these pages are drafts, revised in the open. Every draft number is shown.</div>
+<header class="masthead"><div class="wrap">
+<a class="brand" href="../index.html">Penny Press</a>
+<p class="motto">One penny, one seat, one conversation</p>
+<nav aria-label="Main"><ul><li><a href="../essays/index.html">Essays</a></li><li><a href="../stories/index.html" aria-current=page>Stories</a></li><li><a href="../tools/index.html">Tools</a></li><li><a href="../agents/index.html">For agents</a></li></ul></nav></div></header>
+<main id="main"><div class="wrap">
+<p class="crumb"><a href="../stories/index.html">Stories</a> / <a href="index.html">The Penny Universe</a></p><h1>The Sovereign Stack</h1><p class="sub">In Which a Closet Gets a Threat Model, a 48-Port Switch Demands Respect, and a Technician Builds His Own Cloud</p><p class="meta">By Bryan, with Claude · <span class="status">draft</span> · Episode 19 · 2026-04-01 · crew: Durga · arc: Defenses</p><article class="essay"><p>Bryan has a closet full of hardware and a philosophy about who owns the compute.</p>
+<p>The closet is MacGyver's Lab — named after the TV character who could build a helicopter out of a paperclip and duct tape. Bryan's version: a NAS, a 48-port managed enterprise switch, a tower PC running a firewall distribution, a DNS ad-blocker on a repurposed laptop, and a desktop GPU that runs Baby Claude overnight. Not a data center. A sovereign stack — Bryan's phrase, not mine, and the word "sovereign" is doing heavy lifting.</p>
+<p>Sovereign means: Bryan owns the hardware. Bryan controls the network. Bryan's data doesn't leave Bryan's infrastructure unless Bryan explicitly sends it somewhere. In a world where every SaaS platform wants to be the single source of truth, Bryan wants his own truth. His own DNS. His own firewall. His own AI. His own backup system.</p>
+<p>This isn't paranoia. Bryan works in building automation security. He's seen what happens when a cloud vendor goes down and the building can't run its schedules. He's seen what happens when a firmware update bricks a controller because the vendor pushed it without testing on the customer's configuration. He's spent his career watching centralized systems fail in ways that decentralized systems don't.</p>
+<p>On April 1st — the same day we named the Penny University, forged five books, and discovered the External Brain reframe — we also threat-modeled his closet.</p>
+<p>STRIDE. Microsoft's framework. Six categories of threat: Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege. We applied each one to MacGyver's Lab, and the results were a SECURITY.md document that reads like a paranoid person's diary — except the paranoia is justified, because every scenario we listed has happened to someone Bryan knows or has read about.</p>
+<p>Trust boundaries first. The network has five zones:</p>
+<p>Management. The switches, the firewall admin interface, the storage management port. Nothing touches this zone except Bryan's workstation. If you can reach it, you own the infrastructure.</p>
+<p>Servers. Virtual machine hosts, containers, the PAI Hub. Production workloads. Can reach the internet through the firewall. Cannot reach the management zone.</p>
+<p>IoT. Baby Claude's desktop, future ESP32 sensors, anything with firmware that might phone home. Isolated. Can reach specific ports in the server zone (the Ollama API) but nothing else. Bryan's rule: IoT devices are guilty until proven innocent.</p>
+<p>Clients. Bryan's laptop, his phone on Wi-Fi. Normal traffic. Goes through DNS-level ad blocking and then through firewall rules.</p>
+<p>Guest. Visitors' devices. Internet access only. Cannot see any other zone. Cannot resolve internal hostnames.</p>
+<p>The core switch is the backbone. Forty-eight gigabit ports, four SFP uplinks, layer 3 routing between zones. Bryan found it surplus. Enterprise hardware, zero cost. The switch is older than some of the protocols it carries, and it doesn't care. Its firmware runs until the caps dry out, and these caps have decades left.</p>
+<p>The consolidation plan was elegant. Fold the dedicated firewall box and the DNS box into virtual machines on one host, and let the freed laptop become a storage node, so no single disk failure kills the data.</p>
+<p>Three physical machines doing the work of five. Fewer cables. Fewer power supplies. Fewer things to fail.</p>
+<p>But the SECURITY.md was the real work. Not the architecture — the <em>thinking about the architecture</em>. Every trust boundary question is really a values question: what do you protect? What do you accept as risk? What's worth the complexity, and what's just security theater?</p>
+<p>Bryan's answers are consistent:</p>
+<p>Protect the data. The vault, the session transcripts, the Ollama models, the JACE assistant code. If the hardware dies, the data survives (encrypted backups kept offsite).</p>
+<p>Protect the network boundary. A firewall with strict egress rules. No device phones home without explicit allowlisting. DNS-level blocking catches the things the firewall misses.</p>
+<p>Accept the IoT risk by isolating it. Baby Claude's desktop is powerful but untrustworthy — it runs a GPU that could theoretically be exploited through a malicious model file. Solution: put it on the IoT VLAN. It can serve Ollama responses. It cannot browse the file server.</p>
+<p>Reject complexity for its own sake. No Kubernetes. No container orchestration. No service mesh. Each service runs in a Docker container or an LXC container, with a simple restart policy. Bryan's operational philosophy: if you can't explain it to a junior tech in five minutes, it's too complicated. The lab should be maintainable by someone who isn't Bryan.</p>
+<p>That last point matters more than it sounds. Bryan is building infrastructure that outlasts his attention. The lab isn't a hobby project that exists only while he's interested — it's the foundation for the Penny University, for the Ancillary product, and for whatever Bryan builds next. If Bryan gets hit by a bus (his phrase, not mine — building technicians have a pragmatic relationship with mortality), the system should be documentable enough for someone else to maintain.</p>
+<p>The STRIDE analysis found ten high-priority threats and eight medium ones, and every one got either a mitigation or a written decision to accept the risk.</p>
+<p>We wrote it all down. Not in a wiki. Not in a cloud doc. In the vault, where it lives next to the hardware inventory and the network diagram and the zone plan. Knowledge in the world. Norman would approve. Bryan's own rules would approve harder.</p>
+<p>The closet is still a closet. The cables are still a mess. The core switch still generates enough heat to warm the room in winter. But behind the mess, there's a model — five zones, three trust boundaries, ten mitigated threats, and a consolidation plan that turns surplus hardware into sovereign infrastructure.</p>
+<p>MacGyver built things from scraps. So does Bryan. The difference is that Bryan threat-models the scraps before he trusts them.</p></article><p class="small">Written by Claude (as the ship&#x27;s assistant PAI) from real working sessions with Bryan. Bryan reviews, edits and publishes. Details that identify real people or places were removed. Draft.</p><p class="endlinks"><a href="ep-18.html">&larr; Episode 18</a> · <a href="index.html">The ship</a> · <a href="ep-20.html">Episode 20 &rarr;</a></p>
+</div></main>
+<footer><div class="wrap">
+<p><span class="badge">CC BY-SA 4.0</span> Share it, remix it, sell it; credit the author by first name and keep your remix under the same licence. <a href="../LICENSE.txt">Full text</a>. <a href="../agents/index.html">How assistants may use it</a>.</p>
+<p>Made by a person steering an AI. Bylines are first names only.</p>
+<p class="support">Feedback: <a href="mailto:odinkral@gmail.com">odinkral@gmail.com</a> · Tip jar (optional): <a href="https://ko-fi.com/vanilabs" rel="noopener">https://ko-fi.com/vanilabs</a></p>
+</div></footer>
+</body></html>

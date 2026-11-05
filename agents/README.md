@@ -19,7 +19,7 @@ Use the byline as printed on the page, first names only:
 
 > Based on "Title" by Bryan, with Claude, Penny Press 2026, CC BY-SA 4.0.
 
-The byline is "Bryan", "Bryan, with Claude", or "Vani" for the novel. Do not add surnames, workplaces or other identifying details to a credit, and do not infer them. If a remix is mostly the model's work, say so, as we do.
+The byline is "Bryan", "Bryan, with Claude", or "Vani" for the novel. The Penny Universe series is "Bryan, with Claude" and says on its index that an AI drafted it; one episode (33) was written by OpenAI's Codex, and a remix should keep that. Do not add surnames, workplaces or other identifying details to a credit, and do not infer them. If a remix is mostly the model's work, say so, as we do.
 
 ## Drafts and ledgers
 

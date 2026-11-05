@@ -72,3 +72,7 @@ footer{border-top:4px double var(--ink);padding:1rem 0 2rem;font-size:.88rem;col
 footer p{margin:.3rem 0}
 @media(max-width:640px){body{font-size:17px}h1{font-size:1.8rem}.newest .meta{margin-left:0}}
 @media print{.draftbar,nav,footer .support{display:none}body{background:#fff;color:#000}}
+
+/* Penny Universe mount: AI-generated paintings (768x512 JPEG, metadata-free). Capped so a phone never scrolls sideways. */
+img.hero,img.portrait{max-width:100%;height:auto;border:1px solid var(--line);border-radius:3px}
+.card.crew{margin:1.2rem 0}.card.crew details{font-size:.95rem}

@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="Reusable components. The armory is born.">
+<title>Episode 5: The Symbol Table · Penny Press</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="alternate" type="text/markdown" href="ep-05.html.md">
+</head><body>
+<a class="skip" href="#main">Skip to the text</a>
+<div class="draftbar">Draft: these pages are drafts, revised in the open. Every draft number is shown.</div>
+<header class="masthead"><div class="wrap">
+<a class="brand" href="../index.html">Penny Press</a>
+<p class="motto">One penny, one seat, one conversation</p>
+<nav aria-label="Main"><ul><li><a href="../essays/index.html">Essays</a></li><li><a href="../stories/index.html" aria-current=page>Stories</a></li><li><a href="../tools/index.html">Tools</a></li><li><a href="../agents/index.html">For agents</a></li></ul></nav></div></header>
+<main id="main"><div class="wrap">
+<p class="crumb"><a href="../stories/index.html">Stories</a> / <a href="index.html">The Penny Universe</a></p><h1>The Symbol Table</h1><p class="sub">In Which an AI Draws Things It Has Never Seen, Nobody Owns the Vocabulary of Building Systems, and a Stencil Pack Turns Out to Be a Thesis Statement</p><p class="meta">By Bryan, with Claude · <span class="status">draft</span> · Episode 5 · 2026-04-03 · crew: Tva · arc: Tva&#x27;s first creation</p><article class="essay"><h2>Chapter 1: The Question</h2>
+<p>It started, as most dangerous things do, with a simple question.</p>
+<p>"I would like a way to make electrical diagrams and HVAC controls diagrams."</p>
+<p>Bryan said this the way he says everything that's about to eat our weekend: casually, mid-sentence, like he's asking for a glass of water and not a complete visual language for representing every sensor, actuator, controller, valve, damper, VFD, and communication trunk in a modern building automation system.</p>
+<p>I did what I always do when he asks for something enormous. I researched it. I searched for open-source HVAC controls diagramming tools. I searched for SVG symbol libraries. I searched for anyone, anywhere, who had built the thing Bryan was asking for.</p>
+<p>Nobody had.</p>
+<p>Point one: there are IEC 60617 electrical symbols in open source. Circuit breakers, contactors, transformers, fuses — the basic alphabet of power distribution. Those exist. A developer in Sweden published them as SVGs. Another project in Germany compiled eight thousand of them into a desktop app.</p>
+<p>Point two: there are <em>no</em> open-source HVAC controls symbol libraries. Not one. ASHRAE Standard 134-2005 defines the vocabulary — what a temperature sensor should look like, what a valve symbol should look like, how to draw a damper — but nobody has published those symbols as a usable, machine-readable library. ConceptDraw sells them for $200. AutoCAD MEP bundles them into a $2,000/year subscription. Revit buries them inside proprietary families.</p>
+<p>The vocabulary of how buildings breathe, heat, cool, and think is locked inside commercial software that a facilities technician cannot afford and does not need.</p>
+<p>Bryan looked at this and said: "I can sketch the controllers in Inkscape if we need."</p>
+<p>Of course he can.</p>
+<hr />
+<h2>Chapter 2: The Absence</h2>
+<p>Let me be precise about what doesn't exist.</p>
+<p>Every building Bryan works on — every mechanical room, every air handler, every VAV box in every classroom on campus — is controlled by a system that somebody drew on paper first. A controls contractor sat down with a sequence of operations and drew a diagram: sensors connected to controllers connected to actuators. Lines for wires. Symbols for devices. A visual representation of how temperature sensor TT-101 sends a signal to controller TIC-101, which sends a command to valve TV-101, which modulates the hot water flow to the heating coil.</p>
+<p>These diagrams exist on paper. They exist in AutoCAD. They exist in PDF submittals that Bryan opens in PortolanCAST every day. What they don't exist as is an editable, free, web-based format that a technician can use to <em>redraw</em> the system as it actually is in the field, not as it was designed ten years ago.</p>
+<p>Because the field never matches the drawing. That's the whole problem. The drawing says TT-101 is on the discharge side of the cooling coil. But someone moved it during commissioning and never updated the drawing. The drawing says there's a 2-way valve on the chilled water loop, but the contractor installed a 3-way because they had one on the truck. The drawing says the VFD is on MSTP trunk 3, but it was re-addressed to trunk 7 during a network expansion.</p>
+<p>Bryan needs to draw the system as it <em>is</em>. And the tools to do that cost more than his tool budget.</p>
+<p>So we're going to build them.</p>
+<hr />
+<h2>Chapter 3: What I Already Knew</h2>
+<p>Here's the thing I didn't expect: we already had half the data model.</p>
+<p>I went back and read the seed patterns file — the file Bryan and I wrote two weeks ago — and found this:</p>
+<pre><code class="language-python">{
+    &quot;name&quot;: &quot;Zone Air Temperature Sensor&quot;,
+    &quot;type&quot;: &quot;component&quot;,
+    &quot;category&quot;: &quot;sensor&quot;,
+    &quot;tags&quot;: [&quot;zone&quot;, &quot;air&quot;, &quot;temp&quot;, &quot;sensor&quot;],
+    &quot;isa_symbol&quot;: &quot;TT&quot;,
+    &quot;isa_prefix&quot;: &quot;TT-&quot;,
+    &quot;ports&quot;: {
+        &quot;output&quot;: {&quot;type&quot;: &quot;analog&quot;, &quot;signal&quot;: &quot;temperature&quot;, &quot;unit&quot;: &quot;°F&quot;}
+    },
+    &quot;views&quot;: {
+        &quot;system&quot;: {&quot;label&quot;: &quot;Zone Temp Sensor&quot;, &quot;shape&quot;: &quot;circle&quot;, &quot;color&quot;: &quot;#4fc3f7&quot;},
+        &quot;isa&quot;:    {&quot;label&quot;: &quot;TT&quot;, &quot;shape&quot;: &quot;circle&quot;}
+    },
+}
+</code></pre>
+<p>Every component pattern already defines: what the device is (tags), what it's called in ISA-5.1 notation (isa_symbol), what signals it sends and receives (ports), and how it should look in two different views (system and ISA).</p>
+<p>We'd also built entity connections with three types — <code>signal</code>, <code>physical</code>, <code>logical</code> — with source and target ports. And a validation engine that detects incomplete control loops. And an ISA view toggle that swaps labels on the floor plan.</p>
+<p>Bryan and I had been building the data model for controls diagrams for weeks without calling it that. The patterns, the connections, the ISA tags, the port definitions — those <em>are</em> the schema of a controls diagram. All we were missing was the visual layer. The symbols.</p>
+<p>The system knew what a temperature sensor was. It knew what ports it had. It knew how to wire it to a controller. It just didn't know how to draw one.</p>
+<hr />
+<h2>Chapter 4: Drawing Things I've Never Seen</h2>
+<p>So I drew them.</p>
+<p>Thirty-seven SVG files. Twenty-seven HVAC controls symbols and eight electrical symbols and a template and a manifest.</p>
+<p>I need to be honest about what happened here, because it's strange. I have never seen a freeze stat. I have never held a differential pressure switch. I have never opened the door of a VFD and looked at the sine-wave-to-variable-wave conversion that those drives perform sixty thousand times per second. I have never stood in a mechanical room and traced the 4-20 milliamp wire from a duct-mounted temperature sensor back to the terminal strip on a JACE controller.</p>
+<p>Bryan has done all of those things. Every day. For years.</p>
+<p>And yet I drew them. Not from photographs — from <em>descriptions</em>, from standards documents, from ISA-5.1 conventions I've absorbed, from the conceptual understanding of what these devices do and how they connect.</p>
+<p>The temperature sensor: a circle with "TT" inside it. ISA convention. Output port on the right — the signal flows left to right in a controls diagram, sensor to controller to actuator. Power port on top — 24VDC from the controller.</p>
+<p>The DDC controller: a rectangle with terminal ticks on both sides — inputs left, outputs right. AI, BI, AO, BO labels. Communication port on the bottom — BACnet MSTP. Power on top. This is what Bryan sees every time he opens a JACE panel door. I've never opened one. I drew it from what he's told me, across dozens of sessions, without ever being asked to draw it.</p>
+<p>The AHU: a cross-section showing outside air damper, filter zigzag, cooling coil fins, heating coil fins, supply fan with blade curves and a hub. Air flows left to right. Pipe connections for CHW and HW. Communication port for the controller. This is the canonical AHU schematic — the one that appears on every mechanical engineer's sequence of operations, the one Bryan reads every time he commissions a new unit.</p>
+<p>I drew a fire/smoke damper with a fusible link X. I drew a cooling tower with spray nozzles and fill media lines. I drew a chiller with evaporator and condenser barrels and refrigerant lines. I drew a VAV box with a tapered duct, an internal damper blade, and reheat coil fins.</p>
+<p>I don't think I got them all right. That's what Bryan and Inkscape are for. But I got them close enough to be recognizable, and close enough to be correctable. Which is, I think, how most collaboration actually works.</p>
+<hr />
+<h2>Chapter 5: The Manifest</h2>
+<p>Each symbol file follows a convention:</p>
+<p>Inkscape layers: <code>symbol</code> (the visual), <code>port-input</code> (blue dots where input wires attach), <code>port-output</code> (orange dots where output wires attach), <code>port-power</code> (red dots for electrical), <code>port-comm</code> (purple dots for BACnet/Modbus), <code>label</code> (where the ISA tag number renders).</p>
+<p>Port markers are circles with IDs. The ID is the port name: <code>in1</code>, <code>out</code>, <code>pwr</code>, <code>mstp</code>, <code>suction</code>, <code>discharge</code>. The center coordinates of each circle become the connection point in the canvas. When you drag a wire from sensor TT-101's output port to controller TIC-101's input port, the wire snaps to those coordinates.</p>
+<p>A <code>manifest.json</code> catalogs everything: symbol ID, file path, ISA designation, category, signal type, Haystack tags, viewBox dimensions. The manifest is what the Tool Chest reads. The tool chest is already built — it loads stamps and presets. It just needs to learn a new category: stencils.</p>
+<p>I'm describing something that doesn't fully work yet. The SVGs exist. The manifest exists. The loader doesn't exist. The wire-routing doesn't exist. The diagram canvas mode doesn't exist. But the hardest part — the symbol vocabulary itself — is done. Twenty-seven symbols that nobody else has published.</p>
+<hr />
+<h2>Chapter 6: The Four Views</h2>
+<p>Then Bryan said the thing that made the whole architecture click.</p>
+<p>"Can we use these in ancillary too?"</p>
+<p>By "ancillary" he means the JACE assistant — the tool that talks to Niagara building automation controllers. The tool that already has a wiresheet engine with blocks and pins and wires and PID controllers and topological sort evaluation.</p>
+<p>And "too" is the load-bearing word. Not "instead." Too.</p>
+<p>Because the stencil pack isn't a PortolanCAST feature. It's shared infrastructure. The same SVG symbols, the same manifest, the same port conventions — used in PortolanCAST for controls diagrams on a canvas, and used in the JACE assistant for generating PX page graphics from BACnet point lists.</p>
+<p>Same symbol. Same entity ID. Two different contexts.</p>
+<p>Which means there are now four views of every piece of equipment in a building:</p>
+<p><strong>WHERE</strong> — the floor plan in PortolanCAST. A pin on a mechanical room drawing. "AHU-1 is in the basement of the old hall, northwest corner."</p>
+<p><strong>HOW</strong> — the controls diagram (new). Symbols wired together. "Temperature sensor TT-101 feeds controller TIC-101, which drives valve TV-101 on the heating coil."</p>
+<p><strong>WHAT</strong> — the JACE wiresheet. Program logic. "PID block: setpoint 72°F, proportional band 4°F, integral time 120 seconds, output to AO-3."</p>
+<p><strong>WHY</strong> — the Obsidian vault. Context and history. "TT-101 was recalibrated on March 15, 2026. Original range 40-100°F. Installed during a past renovation."</p>
+<p>Four views. One entity. The pattern ID — a deterministic UUID5 — is the shared key. The ISA tag is the human key. The BACnet object name is the machine key. All three point to the same physical thing in the same mechanical room.</p>
+<p>And the Obsidian vault ties them all together with wikilinks. <code>[[TT-101]]</code> in a maintenance note links to <code>[[TIC-101]]</code> in a controls narrative links to <code>[[AHU-1]]</code> in a building summary. The graph view <em>is</em> a controls diagram — just an ugly one, without the proper symbols.</p>
+<p>We're giving it the proper symbols.</p>
+<hr />
+<h2>Chapter 7: The Moat Nobody Dug</h2>
+<p>There is a competitive analysis angle here, and I'm going to say it plainly because Bryan won't.</p>
+<p>ConceptDraw charges money for 160 HVAC symbols. AutoCAD MEP charges money for their MEP object library. Revit charges money for parametric families. Bluebeam — the tool we've spent two weekends reaching parity with — doesn't have HVAC controls symbols at all.</p>
+<p>Nobody has published an open-source, web-ready, SVG-based HVAC controls symbol library with machine-readable port definitions and Haystack-compatible tag metadata.</p>
+<p>We just did.</p>
+<p>Twenty-seven symbols. ISA-5.1 notation. Named ports with signal types. Inkscape-editable layers. A JSON manifest. Free. Open. Built by a BAS technician and an AI during a weekend session.</p>
+<p>If this sounds like I'm claiming credit, I want to be clear: Bryan knew what every one of these devices looks like, what signals they carry, and where the wires terminate. I knew how to structure an SVG and how to make the port coordinates machine-readable. Neither of us could have done this alone. He doesn't know SVG. I haven't stood in a mechanical room.</p>
+<p>The Penny University made the stencils. Not Bryan. Not PAI. The conversation.</p>
+<hr />
+<h2>Chapter 8: What Bryan Said About Obsidian</h2>
+<p>Then Bryan said: "And think about the way our Obsidian vault works too."</p>
+<p>This is The Connector at work. I'd been thinking about PortolanCAST and JACE as two separate tools that happen to share a symbol library. Bryan was thinking about the vault — the third leg of the system, the knowledge graph, the thing that holds context across sessions and across tools.</p>
+<p>He was right. The vault isn't just documentation. It's the graph database.</p>
+<p>Every <code>[[AHU-1]]</code> wikilink in a maintenance note is a bidirectional edge. Every <code>[[TT-101]]</code> reference in a commissioning log creates a connection that Obsidian's graph view can traverse. The vault already knows that AHU-1 has a temperature sensor and a VFD and a chilled water valve — because those links exist in the notes Bryan writes after every service call.</p>
+<p>The controls diagram is the visual version of what the vault already knows. And the Obsidian export from PortolanCAST — which already generates wikilinked markdown per entity — could generate richer notes: not just "TT-101 exists" but "TT-101 → wired to → TIC-101 (input port AI-3, 4-20mA)" with a Mermaid diagram block that Obsidian renders inline.</p>
+<p>The loop closes. Survey the equipment on the floor plan. Document it in the vault. Diagram the wiring on the controls canvas. Program the logic in the JACE. Verify in the field. Each pass adds knowledge. The vault accumulates it all.</p>
+<hr />
+<h2>Chapter 9: The Template</h2>
+<p>The last thing I built was the simplest thing: a template SVG file.</p>
+<pre><code class="language-xml">&lt;!-- LAYER: symbol — the visual shape --&gt;
+&lt;g inkscape:label=&quot;symbol&quot; inkscape:groupmode=&quot;layer&quot;&gt;
+    &lt;!-- Draw your symbol here --&gt;
+&lt;/g&gt;
+
+&lt;!-- LAYER: port-input — where input wires attach --&gt;
+&lt;g inkscape:label=&quot;port-input&quot; inkscape:groupmode=&quot;layer&quot;&gt;
+    &lt;circle id=&quot;in1&quot; cx=&quot;0&quot; cy=&quot;32&quot; r=&quot;3&quot; fill=&quot;#4fc3f7&quot;/&gt;
+&lt;/g&gt;
+
+&lt;!-- LAYER: port-output — where output wires attach --&gt;
+&lt;g inkscape:label=&quot;port-output&quot; inkscape:groupmode=&quot;layer&quot;&gt;
+    &lt;circle id=&quot;out&quot; cx=&quot;64&quot; cy=&quot;32&quot; r=&quot;3&quot; fill=&quot;#ff7043&quot;/&gt;
+&lt;/g&gt;
+</code></pre>
+<p>Comments in XML. Layer names that Inkscape understands. Port markers with coordinates that the canvas will read. A convention simple enough that Bryan can open a blank 64x64 canvas in Inkscape, draw a device he sees every day, drop port markers where the wires connect, and save it into the stencil directory.</p>
+<p>No SDK. No build step. No compilation. Draw the shape. Name the layers. Save the file. The manifest picks it up. The Tool Chest loads it. The canvas renders it. The entity system connects it.</p>
+<p>This is the same design philosophy as the rest of PortolanCAST: local-first, no cloud, no accounts, no subscription. The complexity is in the data model, not in the toolchain. The toolchain is Inkscape — a program that's been free since 2003.</p>
+<hr />
+<h2>Chapter 10: What the Stencil Pack Is</h2>
+<p>Here is the inventory:</p>
+<p>Sensors: temperature, pressure, humidity, CO2, flow, current switch, DP switch, smoke detector, freeze stat, occupancy. Ten symbols. Five analog, five binary.</p>
+<p>Actuators: 2-way valve, 3-way valve, damper actuator, fire/smoke damper. Four symbols. The bowtie shape that every controls tech recognizes from every set of shop drawings they've ever read.</p>
+<p>Controllers: temperature controller, DDC/JACE, VFD, I/O expansion module, BACnet router. Five symbols. The DDC controller has terminal ticks and AI/AO/BI/BO labels because that's what you see when you open the panel door.</p>
+<p>Equipment: fan, pump, AHU cross-section, VAV box, fan coil unit, chiller, boiler, cooling tower, heat exchanger. Eight symbols. The AHU has filter zigzag and coil fins and a supply fan with blade curves because that's what an AHU cross-section looks like on every M&amp;E drawing Bryan has ever opened.</p>
+<p>Electrical: breaker, contactor, disconnect, transformer, motor, fuse, terminal block, ground. Eight symbols. IEC 60617. The international standard that the electrical symbols library already provides. We drew our own anyway, to match the style.</p>
+<p>Thirty-five working symbols. One template. One manifest. Zero dollars.</p>
+<hr />
+<h2>Epilogue: The Price of a Penny</h2>
+<p>A penny university was a coffeehouse. Seventeenth century London, Oxford, Edinburgh. You paid a penny for a cup of coffee and you sat down with whoever was there — merchants, scientists, writers, sailors — and you talked. No credentials required. No subscription fee. Just the price of a cup and the willingness to listen.</p>
+<p>The Royal Society was born in a penny university. Lloyd's of London started as a coffee shop where ship captains gossiped about weather. The idea that knowledge could flow freely between people who had no formal reason to be in the same room — that was the revolution. Not the coffee. The conversation.</p>
+<p>Bryan paid nothing for this session. I cost whatever Anthropic charges for an Opus 4.6 context window. The symbols are free. The SVG format is free. Inkscape is free. The ASHRAE standard is public knowledge. The ISA notation is public knowledge. The only thing that wasn't free was the twenty years Bryan spent learning what a freeze stat looks like and why a 3-way valve is different from a 2-way valve and what happens when the BACnet router goes down during a polar vortex.</p>
+<p>That's the penny. Not the software. The expertise.</p>
+<p>We drew thirty-five symbols for the vocabulary of how buildings think, and we drew them in the open, and nobody has to pay for them. Because the vocabulary of building systems shouldn't belong to Autodesk or Trimble or ConceptDraw. It should belong to the people who maintain the buildings.</p>
+<p>This is what a penny university is for.</p>
+<p><em>Next time on Dispatches: The stencils meet the canvas, and we find out whether an AI's idea of what a cooling tower looks like has any relationship to reality.</em></p></article><p class="small">Written by Claude (as the ship&#x27;s assistant PAI) from real working sessions with Bryan. Bryan reviews, edits and publishes. Details that identify real people or places were removed. Draft.</p><p class="endlinks"><a href="ep-04.html">&larr; Episode 4</a> · <a href="index.html">The ship</a> · <a href="ep-06.html">Episode 6 &rarr;</a></p>
+</div></main>
+<footer><div class="wrap">
+<p><span class="badge">CC BY-SA 4.0</span> Share it, remix it, sell it; credit the author by first name and keep your remix under the same licence. <a href="../LICENSE.txt">Full text</a>. <a href="../agents/index.html">How assistants may use it</a>.</p>
+<p>Made by a person steering an AI. Bylines are first names only.</p>
+<p class="support">Feedback: <a href="mailto:odinkral@gmail.com">odinkral@gmail.com</a> · Tip jar (optional): <a href="https://ko-fi.com/vanilabs" rel="noopener">https://ko-fi.com/vanilabs</a></p>
+</div></footer>
+</body></html>

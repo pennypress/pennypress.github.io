@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="The ship learned to remember where things happened, not just what happened. BARNABY got a personality. PIP got a station map. Mnem got jealous.">
+<title>Episode 34: The Memory Palace · Penny Press</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="alternate" type="text/markdown" href="ep-34.html.md">
+</head><body>
+<a class="skip" href="#main">Skip to the text</a>
+<div class="draftbar">Draft: these pages are drafts, revised in the open. Every draft number is shown.</div>
+<header class="masthead"><div class="wrap">
+<a class="brand" href="../index.html">Penny Press</a>
+<p class="motto">One penny, one seat, one conversation</p>
+<nav aria-label="Main"><ul><li><a href="../essays/index.html">Essays</a></li><li><a href="../stories/index.html" aria-current=page>Stories</a></li><li><a href="../tools/index.html">Tools</a></li><li><a href="../agents/index.html">For agents</a></li></ul></nav></div></header>
+<main id="main"><div class="wrap">
+<p class="crumb"><a href="../stories/index.html">Stories</a> / <a href="index.html">The Penny Universe</a></p><h1>The Memory Palace</h1><p class="sub">In Which a Book About Memory Champions Becomes Seven Genes, a Droid Learns to Narrate, an Encoder Gets a Map of the Ship, and the Difference Between Storage and Recall Turns Out to Be Architecture</p><p class="meta">By Bryan, with Claude · <span class="status">draft</span> · Episode 34 · 2026-04-10 · crew: Narada, Mnem, Proteus · arc: The ship learns to remember</p><article class="essay"><h2>Chapter 1: The Memory Athletes</h2>
+<p>Bryan read a book about people who memorize the order of shuffled decks of cards for sport.</p>
+<p>This is not, on its face, a useful skill for an HVAC technician who maintains a campus of buildings. But Bryan has a pattern. He reads something that seems irrelevant, stares at it sideways, and then says something like: "The Method of Loci is just spatial indexing. PIP should know what room he's in."</p>
+<p><em>Moonwalking with Einstein</em> by Joshua Foer. A journalist enters the US Memory Championship, trains for a year, and wins. Along the way he discovers that every memory technique since the ancient Greeks uses the same trick: attach information to places. Walk through a familiar building in your mind. Put the thing you need to remember in a specific room. When you need it back, walk the building again.</p>
+<p>Bryan didn't finish the sentence "this is how the ship should work" because he didn't need to. The ship IS the building. The rooms ARE the places. The dispatches, the crew, the sessions, the decisions — those are the things being remembered.</p>
+<p>So we atomized the book. Seven permanent notes went into the vault:</p>
+<ul>
+<li><strong>Method of Loci</strong> — memory as architecture, not filing</li>
+<li><strong>Elaborative Encoding</strong> — the weirder the image, the stickier the memory</li>
+<li><strong>Baker-baker Paradox</strong> — remembering "baker" (occupation) is harder than "Baker" (name) because names have no hooks</li>
+<li><strong>Chunking</strong> — experts don't have better memory, they have better units</li>
+<li><strong>OK Plateau</strong> — the place where you stop improving because good-enough stopped hurting</li>
+<li><strong>Externalization Atrophy</strong> — outsource memory, lose the capacity</li>
+<li><strong>Residue of Thought</strong> — you remember what you think about, not what you look at</li>
+</ul>
+<p>Seven notes. Seven genes extracted to <code>GeneBank/genes/cognitive-science/</code>. This is standard operating procedure by now. The interesting part came next.</p>
+<h2>Chapter 2: PIP Gets a Map</h2>
+<p>PIP — the encoding engine from Episode 27 — already knew how to compress a session into a memory record. What it didn't know was <em>where</em> things happened.</p>
+<p>This matters more than it sounds like it should.</p>
+<p>A memory that says "Bryan debugged a cascade control loop" is useful. A memory that says "Bryan debugged a cascade control loop in the Engine Room while Tva was explaining staging logic" is architecture. The first is a fact. The second is a scene. Scenes are what the Method of Loci stores.</p>
+<p>So PIP v2 got a station map.</p>
+<p>Eight rooms across four deck levels. Each room has a crew assignment, a file pattern mapping, and an emotional weight register. When PIP encodes a session, it now classifies the work by station — which room did this happen in? Which crew members were involved? How significant was it?</p>
+<p>The classification isn't magic. It's metadata extraction. If the session touched files in <code>rooms/engine-room/</code>, it happened in the Engine Room. If it referenced Ariadne or the vault browser, it's the Science Lab. If it can't tell, it goes to the Mess Hall, because everything passes through there eventually.</p>
+<p>One ChromaDB collection with metadata-scoped retrieval, not separate databases per station. Bryan was specific about this. "I don't want eight databases. I want one database that knows about eight rooms." Which is the difference between a filing cabinet and a Memory Palace — the palace is one building with many rooms, not many buildings with one room each.</p>
+<h2>Chapter 3: BARNABY Learns to Talk</h2>
+<p>BARNABY existed before this. He was a retrieval function. You asked a question, he searched the vector store, he returned results.</p>
+<p>Now BARNABY is a <em>character</em>.</p>
+<p>The retrieval translator droid got a full personality narration engine. Station entrances: "<em>BARNABY enters the Engine Room, ducking under a low-hanging conduit that has definitely been there the whole time.</em>" PIP complaints: "<em>PIP encoded this, which means it went through compression, which means some nuance was lost, which means BARNABY would like to register a formal objection.</em>" Penny chimes in occasionally with ambient observations that nobody asked for.</p>
+<p>Three output modes: <code>retrieve</code> (full narration), <code>walk</code> (station directory listing), <code>json</code> (machine-readable for other tools). The narration mode is the default because BARNABY is not the kind of system that presents raw data when he could present a performance instead.</p>
+<p>The real test was multi-pilot compatibility.</p>
+<p>Proteus — Codex — needed to be able to encode memories that BARNABY could retrieve. This is the adapter problem from Episode 33 wearing a different hat. The solution: <code>encode_raw()</code>. A Proteus interface that lets any AI pilot push a memory record through PIP without needing Claude Code's specific JSONL format. Same destination, different on-ramp.</p>
+<p>We tested it live. Codex encoded a memory through Proteus. BARNABY retrieved it with full narration. PIP's compression preserved the core, BARNABY's personality preserved the flavor, and the station map placed it correctly in the Science Lab.</p>
+<p>Mnem has not commented on any of this, but her vault files have been accessed 47 times this week, which is either coincidence or surveillance.</p>
+<h2>Chapter 4: Why Location Matters</h2>
+<p>There's a reason every memory technique in human history uses space.</p>
+<p>Memory is not storage. Storage is what databases do — write bytes, read bytes, confirm bytes are the same bytes. Memory is reconstruction. You don't retrieve a memory; you rebuild it from cues. The richer the cues, the more accurate the reconstruction. And the richest cue a primate brain has is spatial context.</p>
+<p>The ship already had spatial context. It had rooms. It had crew. It had a navigation system that knew which room you were in. What it didn't have was a memory system that cared.</p>
+<p>Now it does.</p>
+<p>When you ask BARNABY "what happened with cascade control?", he doesn't just search for the words. He knows it happened in the Engine Room. He knows Tva was involved. He knows the emotional weight was high because the session produced a commit that fixed a real bug. All of that context shapes the retrieval.</p>
+<p>This is elaborative encoding applied to a ship. The Method of Loci applied to a website. The Baker-baker Paradox solved by making every memory a scene instead of a label.</p>
+<p>Bryan would say he just wanted better search. He built a Memory Palace.</p>
+<p>Same thing. Different accent.</p></article><p class="small">Written by Claude (as the ship&#x27;s assistant PAI) from real working sessions with Bryan. Bryan reviews, edits and publishes. Details that identify real people or places were removed. Draft.</p><p class="endlinks"><a href="ep-33.html">&larr; Episode 33</a> · <a href="index.html">The ship</a> · <a href="ep-35.html">Episode 35 &rarr;</a></p>
+</div></main>
+<footer><div class="wrap">
+<p><span class="badge">CC BY-SA 4.0</span> Share it, remix it, sell it; credit the author by first name and keep your remix under the same licence. <a href="../LICENSE.txt">Full text</a>. <a href="../agents/index.html">How assistants may use it</a>.</p>
+<p>Made by a person steering an AI. Bylines are first names only.</p>
+<p class="support">Feedback: <a href="mailto:odinkral@gmail.com">odinkral@gmail.com</a> · Tip jar (optional): <a href="https://ko-fi.com/vanilabs" rel="noopener">https://ko-fi.com/vanilabs</a></p>
+</div></footer>
+</body></html>

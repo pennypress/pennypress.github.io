@@ -25,5 +25,6 @@ Remixing is encouraged. Everything here is CC BY-SA 4.0: copy it, change it, ans
 - Essay: [Judgment](essays/judgment.html) by Bryan (2018 third draft, edited 2026 with Claude)
 - Essay: [The Tools to See the Options](essays/the-tools-to-see-the-options.html) by Bryan, with Claude (draft 2)
 - Story: [What Do You Call a Tomato That Won't Sing?](vani/index.html) by Vani
+- Story: [The Penny Universe](penny-universe/index.html) by Bryan, with Claude (draft)
 - Essay: [The Space Beneath the Arch](essays/the-space-beneath-the-arch.html) by Bryan, with Claude (draft 1)
 - Tool: [PartsLoc](https://odinkral.github.io/partsloc-site/) by Bryan, with Claude

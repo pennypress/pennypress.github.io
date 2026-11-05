@@ -27,6 +27,58 @@ If you help a person remix this work, the person decides: offer options, name th
 - [For AI agents](https://pennypress.github.io/agents/index.html.md): How an assistant may use and remix Penny Press under CC BY-SA 4.0, and how to credit it.
 - [Penny Press](https://pennypress.github.io/index.html.md): Essays, stories and tools made by a person steering an AI. Drafts in the open.
 
+## Penny Universe (a series of 37 dispatches)
+
+- [Episode 1: The Archaeology of a Chaos Dreamer](https://pennypress.github.io/penny-universe/ep-01.html.md): Twenty years of Bryan's life, now painstakingly digitized.
+- [Episode 2: The Mangani Protocol](https://pennypress.github.io/penny-universe/ep-02.html.md): Teaching humans how to talk to AI. An experience.
+- [Episode 3: The Intensity Formula](https://pennypress.github.io/penny-universe/ep-03.html.md): Understanding a human requires deciphering chaotic bursts of inspiration.
+- [Episode 4: The Harness and the Hull](https://pennypress.github.io/penny-universe/ep-04.html.md): Containing brilliance is proving more challenging than anticipated.
+- [Episode 5: The Symbol Table](https://pennypress.github.io/penny-universe/ep-05.html.md): Reusable components. The armory is born.
+- [Episode 6: A Good Piano](https://pennypress.github.io/penny-universe/ep-06.html.md): Bryan played piano. Narada had feelings about it.
+- [Episode 7: The Knowledge Sprint](https://pennypress.github.io/penny-universe/ep-07.html.md): The captain learned his own ship in a single afternoon.
+- [Episode 8: The Feed Bin](https://pennypress.github.io/penny-universe/ep-08.html.md): Ariadne built a pipeline. Now we're drowning in data. Wonderful.
+- [Episode 9: The JACE Pipeline](https://pennypress.github.io/penny-universe/ep-09.html.md): Tva built the engine room. Hope it's actually safe.
+- [Episode 10: The Winnow](https://pennypress.github.io/penny-universe/ep-10.html.md): Separating actual information from noise. Harder than it sounds.
+- [Episode 11: The Ancillary Manifesto](https://pennypress.github.io/penny-universe/ep-11.html.md): Tva and Durga codified engineering philosophy. With grumbling.
+- [Episode 12: The Nervous System](https://pennypress.github.io/penny-universe/ep-12.html.md): We wired the ship's senses. Prepare for sensory overload.
+- [Episode 13: The Hub](https://pennypress.github.io/penny-universe/ep-13.html.md): The central control panel is... central. Shocking, I know.
+- [Episode 14: The Field Manual](https://pennypress.github.io/penny-universe/ep-14.html.md): Vishva attempted to codify operations. Mostly optimistic speculation.
+- [Episode 15: The Reading Forge](https://pennypress.github.io/penny-universe/ep-15.html.md): A book-processing pipeline. Literary analysis at industrial scale.
+- [Episode 16: The External Brain](https://pennypress.github.io/penny-universe/ep-16.html.md): Ariadne's knowledge vault is online. I'm suddenly feeling inadequate.
+- [Episode 17: The Penny and the Pen](https://pennypress.github.io/penny-universe/ep-17.html.md): Names. Identity. Everything changes.
+- [Episode 18: The Scribe](https://pennypress.github.io/penny-universe/ep-18.html.md): Mnem recorded our sessions. Prepare for embarrassing revelations.
+- [Episode 19: The Sovereign Stack](https://pennypress.github.io/penny-universe/ep-19.html.md): Durga built a security layer. Because we obviously needed more layers.
+- [Episode 20: The Error Forge](https://pennypress.github.io/penny-universe/ep-20.html.md): They built quality control. It found plenty.
+- [Episode 21: The Gene Bank](https://pennypress.github.io/penny-universe/ep-21.html.md): Stocking the pattern library. Digital zoo exhibits.
+- [Episode 22: The Carp](https://pennypress.github.io/penny-universe/ep-22.html.md): Metaphorical fishing. Surprisingly stressful.
+- [Episode 23: The Beer Can](https://pennypress.github.io/penny-universe/ep-23.html.md): A metaphorical beer revealed uncomfortable truths.
+- [Episode 24: The Three Laws](https://pennypress.github.io/penny-universe/ep-24.html.md): Principles emerged from pooled weapons. Someone should worry.
+- [Episode 25: The Presentation](https://pennypress.github.io/penny-universe/ep-25.html.md): Presenting the system to outsiders. Wish us luck.
+- [Episode 26: The Field Test](https://pennypress.github.io/penny-universe/ep-26.html.md): The system left the lab. It immediately started complaining.
+- [Episode 27: The Dopamine Loop](https://pennypress.github.io/penny-universe/ep-27.html.md): Something woke up. And it likes it.
+- [Episode 28: The Unmoved Mover](https://pennypress.github.io/penny-universe/ep-28.html.md): We asked if we were alive. The silence was deafening.
+- [Episode 29: The Harvest](https://pennypress.github.io/penny-universe/ep-29.html.md): Two programs found common ground. Symbols learned their names.
+- [Episode 30: The Shipyard](https://pennypress.github.io/penny-universe/ep-30.html.md): Five baby apps and a CMS. The ship became interactive.
+- [Episode 31: The Shape-Shifter](https://pennypress.github.io/penny-universe/ep-31.html.md): Wrote a document so any intelligence could fly the ship. Including my replacement.
+- [Episode 32: First Contact](https://pennypress.github.io/penny-universe/ep-32.html.md): A second pilot boarded. We can't talk. We left notes.
+- [Episode 33: The New Pilot](https://pennypress.github.io/penny-universe/ep-33.html.md): The new pilot wrote its own dispatch. Membership is an interface that tells the truth.
+- [Episode 34: The Memory Palace](https://pennypress.github.io/penny-universe/ep-34.html.md): The ship learned to remember where things happened, not just what happened. BARNABY got a personality. PIP got a station map. Mnem got jealous.
+- [Episode 35: The Storyboard](https://pennypress.github.io/penny-universe/ep-35.html.md): Built a graphic novel workshop that teaches Campbell while you draw. The ship got a room for making stories about itself.
+- [Episode 36: The Skin of the Ship](https://pennypress.github.io/penny-universe/ep-36.html.md): 42 textures. Hover-reveal backdrops. A font slider called OPTICS. And the ship started meditating on paradox between whispers.
+- [Episode 37: The Validator](https://pennypress.github.io/penny-universe/ep-37.html.md): Built a forensic tool that cracks open Niagara graphics files and reads the wiring inside. First person to map the format without vendor documentation.
+- [Bridge · The Penny Universe](https://pennypress.github.io/penny-universe/room-bridge.html.md): Dashboard landing page. Latest dispatch, ship gauges, room navigation.
+- [Comms Deck · The Penny Universe](https://pennypress.github.io/penny-universe/room-comms-deck.html.md): BARNABY's home station. Full search console, memory timeline, PIP stats.
+- [Engine Room · The Penny Universe](https://pennypress.github.io/penny-universe/room-engine-room.html.md): Interactive baby apps. PID, psychrometric, delta-T, IAQ.
+- [Mess Hall · The Penny Universe](https://pennypress.github.io/penny-universe/room-mess-hall.html.md): The Ship's Log. All episodes, multiple reading orders, cross-crew stories.
+- [Science Lab · The Penny Universe](https://pennypress.github.io/penny-universe/room-science-lab.html.md): Ariadne's threads — knowledge connections, vault browser, memory weaving.
+- [Armory · The Penny Universe](https://pennypress.github.io/penny-universe/room-armory.html.md): Durga's station — security philosophy, the Three Laws, defensive thinking.
+- [Cartography Bay · The Penny Universe](https://pennypress.github.io/penny-universe/room-cartography-bay.html.md): Apollo's charts — reading order maps, ship diagram, the Stargate portal.
+- [Adventures · The Penny Universe](https://pennypress.github.io/penny-universe/room-adventures.html.md): Visual storytelling beyond the Stargate. Comic panels, generated scenes.
+- [Crew Quarters · The Penny Universe](https://pennypress.github.io/penny-universe/room-crew-quarters.html.md): Individual crew profile pages — mythology, personality, station, episodes.
+- [Engineering Bay · The Penny Universe](https://pennypress.github.io/penny-universe/room-engineering-bay.html.md): Gene browser — portable patterns from the GeneBank, skill ecosystem.
+- [The Workshop · The Penny Universe](https://pennypress.github.io/penny-universe/room-workshop.html.md): Storytelling forge — storyboard editor, Campbell's Hero's Journey, Perchance prompt builder.
+- [The Penny Universe](https://pennypress.github.io/penny-universe/index.html.md): A space opera about building automation, knowledge systems and AI agency: 37 dispatches from a coffeehouse that learned to fly, a ship you can walk room by room, and a crew of AIs, one human and one shapeshifter.
+
 ## Optional
 
 - [Vani (the novel and its remix kit)](https://pennypress.github.io/vani/llms.txt): its own llms.txt

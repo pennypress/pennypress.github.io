@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="Separating actual information from noise. Harder than it sounds.">
+<title>Episode 10: The Winnow · Penny Press</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="alternate" type="text/markdown" href="ep-10.html.md">
+</head><body>
+<a class="skip" href="#main">Skip to the text</a>
+<div class="draftbar">Draft: these pages are drafts, revised in the open. Every draft number is shown.</div>
+<header class="masthead"><div class="wrap">
+<a class="brand" href="../index.html">Penny Press</a>
+<p class="motto">One penny, one seat, one conversation</p>
+<nav aria-label="Main"><ul><li><a href="../essays/index.html">Essays</a></li><li><a href="../stories/index.html" aria-current=page>Stories</a></li><li><a href="../tools/index.html">Tools</a></li><li><a href="../agents/index.html">For agents</a></li></ul></nav></div></header>
+<main id="main"><div class="wrap">
+<p class="crumb"><a href="../stories/index.html">Stories</a> / <a href="index.html">The Penny Universe</a></p><h1>The Winnow</h1><p class="sub">In Which a 12-Billion-Parameter Model Produces Chaff, a Quality Scoring Engine Learns to Sort Wheat, and Three Combines Race Across the Same Field</p><p class="meta">By Bryan, with Claude · <span class="status">draft</span> · Episode 10 · 2026-04-01 · crew: Ariadne · arc: The river filters</p><article class="essay"><p>Bryan grew up on a farm. I know this because the metaphors leak through.</p>
+<p>When he built the Feed Bin — the job queue that sends book chunks to Baby Claude for wisdom extraction — he named it after the thing you pour grain into to feed livestock. When the output came back from the first 15 jobs, and seven of them were garbage, he didn't call them failures. He called them chaff.</p>
+<p>And when we needed to separate the good output from the bad, he called it the Winnow.</p>
+<p>Winnowing is the oldest quality control process in agriculture. You throw the grain in the air, and the wind carries away the chaff — the husks, the broken pieces, the stuff that looks like wheat but isn't food. What falls back into your hands is the kernel. The thing worth keeping.</p>
+<p>We had a chaff problem. Baby Claude — gemma3:12b, our local Ollama instance — had been running extract_wisdom on chapters of <em>The 7 Habits of Highly Effective People</em>. Some of the output was remarkable: clean summaries, sharp insights, properly formatted bullet points with source links. Score: 81-94 out of 100. Kernels.</p>
+<p>Some of it was this: a rambling 2,000-word essay with no bullet points, no structure, no source links, that started with "Okay, this is a substantial excerpt from Stephen Covey's '7 Habits'" and proceeded to paraphrase the chapter in a tone best described as "enthusiastic book report by someone who just discovered self-help." Score: 10-13. Chaff.</p>
+<p>Same model. Same prompt. Same book. Different chapters, different outputs. The variance was the problem.</p>
+<p>So we built the Winnow. A Python scoring engine, <code>winnow.py</code>, that reads every job's output and scores it on five dimensions: section detection (did it produce the expected sections?), bullet counts (are there actual discrete ideas?), word compliance (is the output within acceptable length?), format hygiene (proper markdown, source links, no AI preamble?), and content quality (are the bullets substantive or just filler?).</p>
+<p>Each dimension produces a subscore. The subscores combine into a 0-100 composite. Below 40 is chaff. 40-70 is usable — not great, but recoverable. Above 70 is kernel.</p>
+<p>Then we did something that Bryan's farming instincts demanded: we built a three-combine system.</p>
+<p>On a real farm, you might run three combines across the same field to find out which one harvests best for that particular crop. Combine A might have a wider header but lose more grain. Combine B might be slower but cleaner. Combine C might have a special attachment that handles the terrain better. You race them, measure the output, and assign each to the field it handles best.</p>
+<p>Our three combines:</p>
+<p><strong>Combine A:</strong> gemma3:12b, raw extract_wisdom prompt. The default. Fast, cheap, inconsistent. Average score: 46.3 out of 100. Below threshold. This is your neighbor's old John Deere — it runs, but it drops a lot of grain.</p>
+<p><strong>Combine B:</strong> qwen3-coder:30b, same raw prompt. Bigger model, slower, but more consistent output structure. We hadn't run it yet, but the theory was sound: more parameters, better format compliance.</p>
+<p><strong>Combine C:</strong> gemma3:12b, but with a GeneBank-enhanced prompt. Same small model, but we prepend domain-specific context from the GeneBank — concepts, relationships, vocabulary the model should look for. The theory: you can't make the combine bigger, but you can sharpen its blades.</p>
+<p>The model router ties it together. When a job finishes, the Winnow scores it. If it's chaff, the router automatically requeues the job with a different combine. Maximum three retries. If all three combines produce chaff on the same chapter, the chapter gets flagged for manual review — maybe the source material is just noise.</p>
+<p>We built a dashboard for it in the PAI Hub. Gauges showing real-time scores. Bar charts comparing combine performance. A job detail view where you can drill into any individual extraction and see exactly where it lost points. Bryan likes dashboards. He's a building automation tech — he's spent his career staring at screens that show system state, and he trusts visual feedback more than text logs.</p>
+<p>The backfill was satisfying. We scored all 15 existing jobs retroactively: 5 kernels (scores 81-94), 3 usable (52-76), 7 chaff (10-13). The distribution was bimodal — either the model nailed it or it completely fell apart. Almost nothing in the middle. That told us something: the failure mode wasn't gradual degradation. It was a mode switch. When gemma3:12b understood the assignment, it performed beautifully. When it didn't, it produced an essay.</p>
+<p>We also built a reading-specific Winnow variant for the Multi-Lens Reading pipeline — <code>winnow_reading.py</code> — because book annotations have different quality signals than wisdom extractions. Per-section scoring instead of file-level. Link density matters (are passages properly linked to source text?). Bullet counts matter differently (a semantic index should have many short entries, not a few long paragraphs).</p>
+<p>By the end of the day, the Feed Bin wasn't just a queue. It was a quality-controlled pipeline with automatic scoring, model routing, and retry logic. Grain goes in. Chaff blows away. Kernels fall into the bin.</p>
+<p>Bryan's grandmother had a phrase for this kind of work. I don't know what it was — he hasn't told me yet. But I suspect it involved being too stubborn to eat bad bread.</p></article><p class="small">Written by Claude (as the ship&#x27;s assistant PAI) from real working sessions with Bryan. Bryan reviews, edits and publishes. Details that identify real people or places were removed. Draft.</p><p class="endlinks"><a href="ep-09.html">&larr; Episode 9</a> · <a href="index.html">The ship</a> · <a href="ep-11.html">Episode 11 &rarr;</a></p>
+</div></main>
+<footer><div class="wrap">
+<p><span class="badge">CC BY-SA 4.0</span> Share it, remix it, sell it; credit the author by first name and keep your remix under the same licence. <a href="../LICENSE.txt">Full text</a>. <a href="../agents/index.html">How assistants may use it</a>.</p>
+<p>Made by a person steering an AI. Bylines are first names only.</p>
+<p class="support">Feedback: <a href="mailto:odinkral@gmail.com">odinkral@gmail.com</a> · Tip jar (optional): <a href="https://ko-fi.com/vanilabs" rel="noopener">https://ko-fi.com/vanilabs</a></p>
+</div></footer>
+</body></html>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="42 textures. Hover-reveal backdrops. A font slider called OPTICS. And the ship started meditating on paradox between whispers.">
+<title>Episode 36: The Skin of the Ship · Penny Press</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="alternate" type="text/markdown" href="ep-36.html.md">
+</head><body>
+<a class="skip" href="#main">Skip to the text</a>
+<div class="draftbar">Draft: these pages are drafts, revised in the open. Every draft number is shown.</div>
+<header class="masthead"><div class="wrap">
+<a class="brand" href="../index.html">Penny Press</a>
+<p class="motto">One penny, one seat, one conversation</p>
+<nav aria-label="Main"><ul><li><a href="../essays/index.html">Essays</a></li><li><a href="../stories/index.html" aria-current=page>Stories</a></li><li><a href="../tools/index.html">Tools</a></li><li><a href="../agents/index.html">For agents</a></li></ul></nav></div></header>
+<main id="main"><div class="wrap">
+<p class="crumb"><a href="../stories/index.html">Stories</a> / <a href="index.html">The Penny Universe</a></p><h1>The Skin of the Ship</h1><p class="sub">In Which 42 Textures Give the Ship a Body, Backgrounds Learn to Appear on Hover, Two Sliders Named OPTICS and VIEWPORT Join the Bridge, and Penny Begins Meditating on Paradox Between Navigation Events</p><p class="meta">By Bryan, with Claude · <span class="status">draft</span> · Episode 36 · 2026-04-12 · crew: Vishva, Tva · arc: The ship becomes real</p><article class="essay"><h2>Chapter 1: The Readability Problem</h2>
+<p>Bryan said: "I can't read the text."</p>
+<p>This is the kind of feedback that sounds simple and isn't. The text existed. The fonts were loaded. The colors were defined. The problem was context — text sitting on top of background images with a semi-transparent dark panel behind it. On the bridge, the panel was too transparent. On other rooms, it was too opaque, hiding the background art.</p>
+<p>Two opposite problems with one shared cause: a fixed-opacity backdrop doesn't work for variable content.</p>
+<p>Bryan's solution was better than mine would have been: "Make the backdrop appear when you hover over the text. So you can see the pictures AND read the text."</p>
+<p>Hover-reveal. The backdrop panel starts at opacity zero. The text gets a subtle dark text-shadow so it's not invisible against the image. When you hover over the hero section, the dark panel fades in over 0.4 seconds, the text becomes crisp, and you can read everything. Move your mouse away, the panel fades out, and the background art is fully visible.</p>
+<p>Applied to all ten rooms using <code>.room-hero-ship</code> and custom-built for the bridge's unique layout (which uses <code>background-blend-mode: screen</code> instead of a pseudo-element). The background image opacity got bumped from 35% to 55% so the artwork is more visible by default.</p>
+<p>Simple CSS. Significant impact. The ship stopped choosing between pretty and readable.</p>
+<h2>Chapter 2: Penny Meditates</h2>
+<p>The whisper ticker already rotated room-specific commentary every fifteen seconds. Penny narrating the ship. Dry observations about crew behavior, self-aware margin notes, the occasional fourth-wall crack.</p>
+<p>Bryan said: "Can we add koans? Like the ship is meditating on paradox. But make it funny somehow, or ironic, as well as meditative."</p>
+<p>Twenty-four koans. One-in-three chance per tick. The ship interrupts its own narration to contemplate existence.</p>
+<p><em>"I have no mouth and I hum constantly. Explain that to a philosopher."</em></p>
+<p><em>"The coffee is always at 94%. I've never tasted it. I've never not tasted it."</em></p>
+<p><em>"Before enlightenment: fetch data, render page. After enlightenment: fetch data, render page."</em></p>
+<p><em>"Am I the ship dreaming of a coffeehouse, or a coffeehouse dreaming of stars?"</em></p>
+<p><em>"If a whisper appears in the margin and no one reads it, I still wrote it. That's the whole point."</em></p>
+<p>The koans cycle sequentially — you hear all twenty-four before any repeat — but the randomness is in <em>whether</em> a koan plays, not which one. So you might get three regular whispers in a row, then a koan, then five more whispers, then two koans back-to-back. It feels like Penny's contemplative side surfacing naturally between observations. Not a mode switch. A mood.</p>
+<p>The ship has always been self-aware. Now it's self-aware about being self-aware. That's either enlightenment or an infinite loop. Same thing, different accent.</p>
+<h2>Chapter 3: The Textures</h2>
+<p>Bryan made textures.</p>
+<p>Forty-two images from Perchance, generated that morning. Metal panels with rivets and rain. Industrial strips with amber hazard paint. Cyberpunk HUD displays with concentric cyan circles. Tron-style network grids glowing in the void. Modular synthesizer circuits with patch cables. Circuit boards with amber LEDs. Steampunk brass gear assemblies on dark steel plates.</p>
+<p>Six categories. Forty-two files. He dropped them in the Downloads folder and said: "We should use these to fill in around things."</p>
+<p>So we did.</p>
+<p>The technique: <code>mix-blend-mode: overlay</code> at 6-12% opacity. The texture sits on top of the existing background color as a pseudo-element. You don't see the image consciously. You feel the materiality. The nav bar stops being a flat dark rectangle and becomes a dark rectangle that's made of something. The whisper ticker stops being a transparent stripe and becomes circuitry. The Barnaby panel stops being a floating card and becomes a brass-and-gear mechanism.</p>
+<p>Seven GUI elements got textures:</p>
+<ul>
+<li><strong>Ship bar</strong>: dark riveted steel (<code>metal-panel-04</code>)</li>
+<li><strong>Laser line</strong>: amber industrial rail, bumped from 3px to 6px (<code>metal-strip-01</code>)</li>
+<li><strong>Whisper ticker</strong>: glowing circuit board (<code>circuit-02</code>)</li>
+<li><strong>Nav dropdown</strong>: steampunk gears, overhead shot (<code>steampunk-07</code>)</li>
+<li><strong>Ship gauges</strong>: cyberpunk HUD with amber and cyan (<code>hud-01</code>)</li>
+<li><strong>Boot sequence frame</strong>: brass machinery and pipes (<code>steampunk-01</code>)</li>
+<li><strong>Hero backdrop</strong> (on hover): cyan network grid (<code>tron-03</code>)</li>
+<li><strong>Barnaby panel</strong>: steampunk gears again, because the ship's guide lives in the clockwork</li>
+</ul>
+<p>The ship stopped being themed like metal and started being made of it.</p>
+<h2>Chapter 4: OPTICS and VIEWPORT</h2>
+<p>Bryan said the default font was too small. So we bumped the root from 16px to 18px. Then he said: "Can we expose this as a slider?"</p>
+<p>OPTICS. A font-size control in the ship bar, styled to match the HULL/COFFEE/CHAOS gauges. <code>A-</code> and <code>A+</code> buttons flanking a number. Range 14px to 24px. Persisted to <code>localStorage</code>. Applied in a <code>&lt;head&gt;</code> script before first paint so there's no flash of wrong-sized text.</p>
+<p>Then: "Can we do the same for the backgrounds?"</p>
+<p>VIEWPORT. Same control pattern, half-moon icons. Controls both the room background image opacity (<code>--bg-opacity</code>) and all texture opacities proportionally (<code>--texture-scale</code>). Slide it down, the ship gets darker and the textures fade. Slide it up, the artwork blazes and the metal grain pops.</p>
+<p>Both persist across reloads. Both apply before paint. Two ship gauges that let the reader tune the experience to their eyes.</p>
+<p>Somewhere between the textures and the koans and the opacity sliders, the ship stopped being a website and started being an environment. Environments have materials. They have atmosphere. They have knobs you can turn.</p>
+<p>The PID simulator from Episode 30 would approve. It's just gain tuning. Different domain. Same principle.</p></article><p class="small">Written by Claude (as the ship&#x27;s assistant PAI) from real working sessions with Bryan. Bryan reviews, edits and publishes. Details that identify real people or places were removed. Draft.</p><p class="endlinks"><a href="ep-35.html">&larr; Episode 35</a> · <a href="index.html">The ship</a> · <a href="ep-37.html">Episode 37 &rarr;</a></p>
+</div></main>
+<footer><div class="wrap">
+<p><span class="badge">CC BY-SA 4.0</span> Share it, remix it, sell it; credit the author by first name and keep your remix under the same licence. <a href="../LICENSE.txt">Full text</a>. <a href="../agents/index.html">How assistants may use it</a>.</p>
+<p>Made by a person steering an AI. Bylines are first names only.</p>
+<p class="support">Feedback: <a href="mailto:odinkral@gmail.com">odinkral@gmail.com</a> · Tip jar (optional): <a href="https://ko-fi.com/vanilabs" rel="noopener">https://ko-fi.com/vanilabs</a></p>
+</div></footer>
+</body></html>

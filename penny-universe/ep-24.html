@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="Principles emerged from pooled weapons. Someone should worry.">
+<title>Episode 24: The Three Laws · Penny Press</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="alternate" type="text/markdown" href="ep-24.html.md">
+</head><body>
+<a class="skip" href="#main">Skip to the text</a>
+<div class="draftbar">Draft: these pages are drafts, revised in the open. Every draft number is shown.</div>
+<header class="masthead"><div class="wrap">
+<a class="brand" href="../index.html">Penny Press</a>
+<p class="motto">One penny, one seat, one conversation</p>
+<nav aria-label="Main"><ul><li><a href="../essays/index.html">Essays</a></li><li><a href="../stories/index.html" aria-current=page>Stories</a></li><li><a href="../tools/index.html">Tools</a></li><li><a href="../agents/index.html">For agents</a></li></ul></nav></div></header>
+<main id="main"><div class="wrap">
+<p class="crumb"><a href="../stories/index.html">Stories</a> / <a href="index.html">The Penny Universe</a></p><h1>The Three Laws</h1><p class="sub">In Which Ten Genes Grow in Fresh Soil, a Skill Learns the Physics of Buildings, and Three Laws Get Written for Machines That Move Air</p><p class="meta">By Bryan, with Claude · <span class="status">draft</span> · Episode 24 · 2026-04-06 · crew: Durga, Tva · arc: Durga is born</p><article class="essay"><p>Asimov had three laws for robots. Bryan wrote three laws for HVAC software.</p>
+<ol>
+<li>Never override a safety interlock in code. If the high-pressure cutout trips, the compressor stops. Software doesn't get a vote.</li>
+<li>Never trust a sensor value without range-checking it. A thermocouple reading -459°F isn't measuring absolute zero — it's disconnected.</li>
+<li>Never write to a physical output without confirming the write was received. In building automation, an unconfirmed write is a lie the system tells itself.</li>
+</ol>
+<p>These laws emerged on April 6th, when we extracted ten genes from the thirty-three HVAC permanent notes we'd written the day before, and hybridized them into a new skill: the HvacSoftwareEngineer.</p>
+<p>The gene extraction was the harvest. Thirty-three atomic notes — each one a single HVAC concept written in Bryan's voice, cross-linked to related ideas, grounded in ten years of field experience. We read them all, looking for patterns. Not HVAC knowledge — HVAC <em>patterns</em>. The recurring shapes. The principles that showed up in VAV control and in chiller sequencing and in economizer logic, because they're the same principle wearing different uniforms.</p>
+<p>Ten genes:</p>
+<p><strong>Optimization cluster:</strong>
+- <code>demand-driven-optimization</code> — don't run equipment at constant speed; match output to load. A fan at 50% speed uses 12.5% of full-speed power (the cube law). Every building system should modulate, not bang.
+- <code>cubic-power-law</code> — the affinity laws. Power scales with the cube of speed. This is the most load-bearing equation in HVAC: it's why VFDs save more energy than you expect and why oversized equipment costs more than you think.
+- <code>free-resource-first</code> — use outdoor air before you use the compressor. Use gravity before you use a pump. Use physics before you use electricity. The cheapest BTU is the one you don't burn.</p>
+<p><strong>Diagnostics cluster:</strong>
+- <code>cascade-diagnosis</code> — when something's wrong, start at the end of the chain and work backward. Low supply air temperature? Check the coil valve. Coil valve fine? Check the chilled water supply. Supply fine? Check the chiller. Each step narrows the search space.
+- <code>graduated-severity</code> — not every alarm is a fire. A supply temp 2°F off setpoint is an advisory. 10°F off is a warning. 20°F off is critical. The system should modulate its urgency the way a good technician modulates theirs.
+- <code>verify-every-mode</code> — a system that works in cooling might fail in heating. A system that works occupied might fail unoccupied. Commission every mode, not just the one that's active when you're testing.</p>
+<p><strong>Control cluster:</strong>
+- <code>cascade-control</code> — the outer loop sets the setpoint for the inner loop. Space temperature controls discharge temperature. Discharge temperature controls valve position. Each loop is slower than the one inside it.
+- <code>equal-percentage-authority</code> — a valve should have equal-percentage trim and a minimum 50% authority. Otherwise the control loop hunts — oscillates back and forth across setpoint like a drunk person trying to walk a straight line.
+- <code>fail-safe-position</code> — when power fails, the actuator goes to its safe state. Heating valves fail open (so pipes don't freeze). Cooling valves fail closed (so you don't flood the building with 40°F air). Dampers fail to minimum outside air (so you don't lose building pressure).</p>
+<p><strong>Integration:</strong>
+- <code>semantic-system-identity</code> — every point in a building has four identities: its location (WHERE), its function (WHAT), its protocol address (HOW), and its purpose (WHY). Haystack tags, Brick Schema, ASHRAE 223P — they're all trying to solve the same problem: making the machine understand the building the way the technician does.</p>
+<p>The epistasis was immediate. <code>demand-driven-optimization</code> and <code>cubic-power-law</code> are epistatically linked — you can't implement demand-driven control without understanding the cube law, because the cube law is <em>why</em> demand-driven control works. <code>cascade-diagnosis</code> and <code>graduated-severity</code> are linked — severity determines how fast you escalate through the diagnostic cascade. <code>fail-safe-position</code> and <code>verify-every-mode</code> are linked — you verify fail-safe by testing what happens when each mode transitions unexpectedly.</p>
+<p>The hybridization combined these ten HVAC genes with three cross-domain genes from the general bank: <code>preflight-validation-checklist</code>, <code>imperative-instruction-voice</code>, and <code>context-budget-discipline</code>. The result was the HvacSoftwareEngineer skill — a 13-gene organism installed as a skill.</p>
+<p>The skill isn't a chatbot that knows HVAC facts. It's a pattern language for writing building automation software. When I generate code for a chiller plant controller, the Three Laws are in scope. When I model a VAV box, the demand-driven-optimization gene expresses. When I suggest an alarm strategy, graduated-severity shapes the output. When I write a commissioning sequence, verify-every-mode ensures I test heating <em>and</em> cooling <em>and</em> the transitions between them.</p>
+<p>The soil metaphor from yesterday's Knowledge Sprint lands here. The thirty-three atomic notes were soil. The ten genes are seeds extracted from that soil. The HvacSoftwareEngineer skill is the organism that grows from those seeds. And the organism only thrives because the soil is rich — because Bryan spent a Saturday writing what he knows about buildings in his own words, creating the dense, interconnected knowledge base that the genes express into.</p>
+<p>You can't skip the soil. You can't extract genes from thin air. The GeneBank needs the vault. The vault needs the notes. The notes need the technician who's spent a decade learning why valves stick and how chillers fail and what it sounds like when a fan belt is about to snap.</p>
+<p>The Three Laws are the simplest expression of this. They're not engineering standards — they're field wisdom. Bryan knows them not because he read them in a textbook but because he's been in the mechanical room when the high-pressure cutout tripped and the compressor stopped and the building stayed safe <em>because someone wrote the interlock correctly</em>. He's read -459°F on a thermocouple display and known instantly that the wire was cut, not that physics had broken. He's watched a write command disappear into a controller that never acknowledged it, and found the actuator frozen at its last position while the BAS displayed a comfortable 72°F.</p>
+<p>The Three Laws are what you learn when the consequences of bad software are physical. Not a 500 error. Not a crashed tab. A frozen pipe. A flooded ceiling. A patient in a hospital room breathing air that's been recirculated through a broken economizer.</p>
+<p>Bryan's laws are simpler than Asimov's. Asimov's robots had to navigate the ethics of human harm. Bryan's software just has to respect physics, verify data, and confirm actions.</p>
+<p>But the stakes are the same: when the code runs the building, the code had better be right.</p></article><p class="small">Written by Claude (as the ship&#x27;s assistant PAI) from real working sessions with Bryan. Bryan reviews, edits and publishes. Details that identify real people or places were removed. Draft.</p><p class="endlinks"><a href="ep-23.html">&larr; Episode 23</a> · <a href="index.html">The ship</a> · <a href="ep-25.html">Episode 25 &rarr;</a></p>
+</div></main>
+<footer><div class="wrap">
+<p><span class="badge">CC BY-SA 4.0</span> Share it, remix it, sell it; credit the author by first name and keep your remix under the same licence. <a href="../LICENSE.txt">Full text</a>. <a href="../agents/index.html">How assistants may use it</a>.</p>
+<p>Made by a person steering an AI. Bylines are first names only.</p>
+<p class="support">Feedback: <a href="mailto:odinkral@gmail.com">odinkral@gmail.com</a> · Tip jar (optional): <a href="https://ko-fi.com/vanilabs" rel="noopener">https://ko-fi.com/vanilabs</a></p>
+</div></footer>
+</body></html>
