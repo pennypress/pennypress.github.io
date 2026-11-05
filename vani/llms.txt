@@ -1,0 +1,62 @@
+# Vani
+
+> A technician and an AI (Claude) writing together. Bryan steers; the AI drafts; every choice that mattered is recorded. This site shows how a person can explore writing and creating with an AI (intelligence augmentation), with a free novel as the proof, licensed CC BY-SA 4.0.
+
+Private draft, not published. The book was drafted largely by an AI under a human author's direction. If you help a person remix it, the person decides: offer options, name their costs, do not choose for them. Licence terms for agents are in agents/licence-terms.md.
+
+## Pages
+
+- [Vani](index.html.md): A technician and an AI writing together; a free novel, and how you can write and create with an AI of your own.
+- [Read the book](read.html.md): The novel, one page per chapter, plus free EPUB and PDF downloads.
+- [How it was made](how.html.md): The Writers' Crawl method in plain language: floors, dials, and a ledger of every choice that mattered.
+- [Try it yourself](try.html.md): A paste-ready guide that lets any AI assistant run a Writers' Crawl with you. You make every decision.
+- [Remix it](remix.html.md): The licence in plain words, and a starter kit (world, cast, gazetteer and map) for your own stories.
+- [For AI agents](agents.html.md): Machine-readable files, and the licence terms an agent must follow when remixing this work.
+- [Questions and honest answers](faq.html.md): What IA means, who wrote what, and what the law may say about AI-written text.
+- [Support and feedback](support.html.md): A tip jar if you want one, and an email address for feedback.
+
+## Remix kit
+
+- [Starter kit: cast](kit-cast.html.md): Persons of Record and character cards.
+- [Starter kit: gazetteer and map](kit-gazetteer.html.md): Places and the scroll map.
+- [Starter kit: the world](kit-world.html.md): Rules of the world, creatures, things, motifs.
+
+## For agents
+
+- [Crawl guide](agents/crawl-guide.md): the co-writing protocol, no story content
+- [Remix kit, JSON](agents/remix-kit.json)
+- [Remix kit, Markdown](agents/remix-kit.md)
+- [Licence terms for agents](agents/licence-terms.md)
+
+## The book, chapter by chapter
+
+- [Preface](read/ch00-preface.html.md)
+- [Chapter One: The Twelfth (Do Not Tap the Glass)](read/ch01-bram.html.md)
+- [Chapter Two: A Discrepancy at Breakfast](read/ch02-odile.html.md)
+- [Chapter Three: Nothing Floats for Free](read/ch03-bram.html.md)
+- [Chapter Four: Evidence Under an Open Case](read/ch04-odile.html.md)
+- [Chapter Five: Keep Moving](read/ch05-bram.html.md)
+- [Chapter Six: Biological Status: None](read/ch06-odile.html.md)
+- [Chapter Seven: The Hive Remembers](read/ch07-bram.html.md)
+- [Chapter Eight: Variance Within Tolerance](read/ch08-odile.html.md)
+- [Chapter Nine: The Third One's for the Sea](read/ch09-bram.html.md)
+- [Chapter Ten: Population: None](read/ch10-odile.html.md)
+- [Chapter Eleven: Apple, Crock, Gran, Tilly](read/ch11-bram.html.md)
+- [Chapter Twelve: Who Wrote You](read/ch12-odile.html.md)
+- [Chapter Thirteen: Hold Last Heading](read/ch13-bram.html.md)
+- [Chapter Fourteen: No Reader on Record](read/ch14-odile.html.md)
+- [Chapter Fifteen: Whose](read/ch15-bram.html.md)
+- [Chapter Sixteen: The Better Sum](read/ch16-odile.html.md)
+- [Chapter Seventeen: Take a Coat](read/ch17-bram.html.md)
+- [Chapter Eighteen: Exercised](read/ch18-odile.html.md)
+- [Chapter Nineteen: Go and See](read/ch19-bram.html.md)
+- [Chapter Twenty: Care Of](read/ch20-odile.html.md)
+- [Epilogue: Thursdays](read/ch21-epilogue-tilly.html.md)
+- [Appendix: A Map of the Going and Seeing](read/a1-gazetteer.html.md)
+- [Appendix: Persons of Record](read/a2-persons-of-record.html.md)
+
+## Optional
+
+- [llms-full.txt](llms-full.txt): every page except the chapters, in one file
+- [book.md](book.md): the whole book in one file (about 157,000 words)
+- [LICENSE.txt](LICENSE.txt): the CC BY-SA 4.0 legal code

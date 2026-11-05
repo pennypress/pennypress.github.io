@@ -1,0 +1,63 @@
+/* Vani site. One local stylesheet; no web fonts, no scripts, no CDNs. A page that calls out to another
+   server would break two promises made on the home page (nothing tracks you; it costs almost nothing to load).
+   Palette is taken from the book's cover, a Register form: cream paper #efe7d3, typewriter ink #2a2824,
+   stamp red #a82418, ballpoint navy #1c2a4a. Type: the headings are a typewriter (system monospace), the text
+   a book serif (Georgia), both already on every device, so no font file is ever downloaded.
+   Contrast measured on paper: ink on paper 11.6:1; stamp red on paper 5.9:1 (OK for text over 14px bold and
+   for links); navy on paper 11:1. Red is NOT used for small body text on the dark theme (see below). */
+:root{--paper:#efe7d3;--card:#f7f1e1;--ink:#2a2824;--mute:#5a554a;--line:#cfc4a8;--red:#a82418;--navy:#1c2a4a;--tint:#e6dcc2;--link:#1c2a4a;--accent:#a82418}
+@media (prefers-color-scheme:dark){:root{--paper:#1d1b17;--card:#26231d;--ink:#ebe3cf;--mute:#b3aa94;--line:#3b362b;--red:#e0705f;--navy:#9fb4e6;--tint:#2d291f;--link:#a9bdf0;--accent:#e0705f}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:18px/1.65 Georgia,"Iowan Old Style","Palatino Linotype",serif}
+a{color:var(--link);text-decoration-thickness:1px;text-underline-offset:2px}
+a:hover{color:var(--accent)}
+img{max-width:100%;height:auto}
+.wrap{max-width:46rem;margin:0 auto;padding:0 1.25rem}
+.wide{max-width:64rem}
+.skip{position:absolute;left:-999px}.skip:focus{left:1rem;top:1rem;background:var(--ink);color:var(--paper);padding:.5rem 1rem;z-index:9}
+.draftbar{background:var(--red);color:#fff;font:600 .8rem/1.4 ui-monospace,"Courier New",monospace;letter-spacing:.06em;text-align:center;padding:.35rem 1rem;text-transform:uppercase}
+header.top{border-bottom:2px solid var(--ink)}
+header.top .wrap{display:flex;align-items:baseline;gap:1rem;flex-wrap:wrap;padding-top:.8rem;padding-bottom:.6rem;max-width:64rem}
+.brand{font:700 1.5rem/1 "Courier New",Courier,ui-monospace,monospace;letter-spacing:.12em;color:var(--ink);text-decoration:none;text-transform:uppercase}
+nav ul{display:flex;gap:.2rem 1rem;list-style:none;margin:0;padding:0;flex-wrap:wrap;font:.88rem/1.5 ui-monospace,"Courier New",monospace}
+nav a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent}
+nav a:hover,nav a[aria-current]{border-bottom-color:var(--accent)}
+main{padding:1.5rem 0 3rem}
+h1,h2,h3{font-family:"Courier New",Courier,ui-monospace,monospace;line-height:1.25;font-weight:700}
+h1{font-size:1.9rem;margin:.4rem 0 1rem}
+h2{font-size:1.3rem;margin:2.2rem 0 .6rem;border-bottom:1px solid var(--line);padding-bottom:.2rem}
+h3{font-size:1.1rem;margin:1.6rem 0 .4rem}
+blockquote{margin:1.1rem 0;padding:.2rem 1rem;border-left:3px solid var(--accent);color:var(--mute);font-style:italic}
+code,pre{font-family:ui-monospace,"Courier New",monospace;font-size:.88em}
+pre{background:var(--tint);border:1px solid var(--line);padding:.8rem 1rem;overflow-x:auto;line-height:1.45}
+table{border-collapse:collapse;width:100%;margin:1rem 0;font-size:.95rem}
+th,td{border:1px solid var(--line);padding:.35rem .6rem;text-align:left;vertical-align:top}
+th{background:var(--tint);font-family:ui-monospace,"Courier New",monospace;font-size:.85rem}
+.badge{display:inline-block;font:600 .8rem ui-monospace,"Courier New",monospace;border:2px solid var(--accent);color:var(--accent);padding:.1rem .5rem;border-radius:3px;letter-spacing:.05em;transform:rotate(-1.5deg)}
+.notice{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);padding:.8rem 1rem;margin:1.2rem 0}
+.placeholder{background:var(--tint);border:2px dashed var(--mute);padding:.8rem 1rem;margin:1rem 0;font-style:italic}
+.hero{display:grid;grid-template-columns:minmax(0,15rem) 1fr;gap:1.5rem 2rem;align-items:start;margin:.5rem 0 1.5rem}
+.hero img{border:1px solid var(--line);box-shadow:3px 4px 0 var(--line);display:block}
+.blurb{font-family:ui-monospace,"Courier New",monospace;font-size:.88rem;line-height:1.55;background:var(--card);border:1px solid var(--line);padding:.4rem 1rem;margin:.6rem 0}.blurb p{margin:.6rem 0}
+.chapters{list-style:none;padding:0;margin:1rem 0;columns:1}
+.chapters li{margin:.35rem 0;break-inside:avoid}
+.chapters .n{font:.8rem ui-monospace,"Courier New",monospace;color:var(--mute);display:inline-block;min-width:2.2rem}
+.pn{display:flex;justify-content:space-between;gap:1rem;font:.9rem ui-monospace,"Courier New",monospace;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:.5rem 0;margin:1.2rem 0}
+.pn span{flex:1}.pn .mid{text-align:center}.pn .nx{text-align:right}
+.chapter p{margin:0 0 .15rem;text-indent:1.4em}
+.chapter p.first,.chapter blockquote p,.chapter p.scene{text-indent:0}
+.chapter p.scene{text-align:center;margin:1.4rem 0;color:var(--mute);letter-spacing:.5em}
+.chapter blockquote{font-style:italic}
+.chapter blockquote p.attr{text-align:right;font-style:normal;font-size:.9em}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(17rem,1fr));gap:1rem;margin:1rem 0}
+.card{background:var(--card);border:1px solid var(--line);padding:.7rem 1rem}
+.card h3{margin:.1rem 0 .3rem;font-size:1rem}
+.card p{margin:.3rem 0;font-size:.92rem;line-height:1.5}
+.card .glint{font-style:italic;color:var(--mute)}
+.map img{margin:.8rem 0;border:1px solid var(--line)}
+footer{border-top:2px solid var(--ink);padding:1.2rem 0 2rem;font-size:.88rem;color:var(--mute)}
+footer .wrap{max-width:64rem}
+footer p{margin:.3rem 0}
+@media(max-width:640px){body{font-size:17px}.hero{grid-template-columns:1fr}.hero img{max-width:12rem}h1{font-size:1.55rem}.brand{font-size:1.25rem}.pn{flex-wrap:wrap}}
+@media print{.draftbar,header.top nav,.pn,footer .support{display:none}body{background:#fff;color:#000}}

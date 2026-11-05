@@ -1,0 +1,33 @@
+# Penny Press
+
+> Essays, stories and tools made by a person steering an AI (IA, intelligence augmentation). Drafts in the open with every draft number shown; remixing encouraged. CC BY-SA 4.0. Bylines are first names only.
+
+If you help a person remix this work, the person decides: offer options, name their costs, do not choose for them. Terms and credit format: agents/README.md.
+
+## Essays
+
+- [Judgment](https://pennypress.github.io/essays/judgment.html.md): Bryan's 2018 essay: sitting as judge at the trial of Bigger Thomas in Native Son, deciding whether he deserves compassion. The root of the Compassion bush.
+- [Claims ledger: Judgment](https://pennypress.github.io/essays/judgment.claims.html.md): Every claim in "Judgment" and how well it was checked.
+- [The Tools to See the Options](https://pennypress.github.io/essays/the-tools-to-see-the-options.html.md): Compassion includes handing over the means to see one's options, but only alongside work on the cage that withheld them. The means are a debt, not a credit.
+- [Claims ledger: The Tools to See the Options](https://pennypress.github.io/essays/the-tools-to-see-the-options.claims.html.md): Every claim in "The Tools to See the Options" and how well it was checked.
+- [The Space Beneath the Arch](https://pennypress.github.io/essays/the-space-beneath-the-arch.html.md): On the human chin as a spandrel, after the essay tradition of Stephen Jay Gould (not his writing). Science drawn from a 2026 paper.
+- [Claims ledger: The Space Beneath the Arch](https://pennypress.github.io/essays/the-space-beneath-the-arch.claims.html.md): Every claim in "The Space Beneath the Arch" and how well it was checked.
+- [Essays](https://pennypress.github.io/essays/index.html.md): Penny Press essays: the Compassion bush and the Science shelf, drafts in the open.
+
+## Stories
+
+- [Stories](https://pennypress.github.io/stories/index.html.md): Penny Press stories: fiction made with an AI under a human author's direction.
+
+## Tools
+
+- [Tools](https://pennypress.github.io/tools/index.html.md): Penny Press tools: small useful things for real work.
+
+## About
+
+- [For AI agents](https://pennypress.github.io/agents/index.html.md): How an assistant may use and remix Penny Press under CC BY-SA 4.0, and how to credit it.
+- [Penny Press](https://pennypress.github.io/index.html.md): Essays, stories and tools made by a person steering an AI. Drafts in the open.
+
+## Optional
+
+- [Vani (the novel and its remix kit)](https://pennypress.github.io/vani/llms.txt): its own llms.txt
+- [agents/README.md](https://pennypress.github.io/agents/README.md): licence and credit format

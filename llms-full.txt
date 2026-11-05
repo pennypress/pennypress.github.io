@@ -1,0 +1,689 @@
+# Penny Press (full text)
+
+Essays, stories and tools made by a person steering an AI. Drafts in the open.
+
+
+---
+
+# Judgment  (https://pennypress.github.io/essays/judgment.html)
+
+By Bryan · 2018 third draft, edited 2026 with Claude · [claims ledger](judgment.claims.html)
+
+> **About this text.** Bryan wrote this in December 2018 for a philosophy course on compassion. The
+> assignment: sit as the judge in Bigger Thomas's trial in Richard Wright's *Native Son*, and decide
+> whether he deserves compassion. This is the third draft, the last one in his hand alone, lightly
+> edited in 2026 with Claude for typos and clarity. The argument and its order are his, unchanged. Page numbers
+> refer to *Native Son*. It is the root of a set of essays on compassion that branch from it.
+
+---
+
+As the judge of this trial, I have been given the task of deciding whether compassion is warranted toward the defendant, Bigger Thomas. The lack of premeditation and the accidental nature of the original crime call for mercy. Bigger lacked free will, in the sense that he could not have done other than what he did: given the violent, racist environment that formed him, it was only a matter of time before he acted the way he had been primed to act. Several parts of his life call for compassion, and taken together they lead me to conclude that he should be given a chance to live. Bigger was denied a chance at life by a society that oppressed him and his whole people. That oppression came because of the color of his skin, not because of any defect in his merit or his conduct. If we give Bigger a chance at life, we declare that he matters, and we give ourselves a chance to recognize how much we need all of our fellow citizens in order to live full and meaningful lives.
+
+The defense has raised several facts about Bigger's life that must be weighed. The first is that he does not stand equal under the law. No jury of white people will be able to set aside its racial prejudice and consider the facts of the case (384). In their minds, a black man is guilty before any evidence is presented, and the atmosphere around this trial makes it worse (382). Buckley opens the window and lets the chant of a mob calling for death flood into the courtroom (373). Then, having used sentiment to sway the court, he argues that sentiment should play no part in deciding the case (374). His argument against sentiment is undone by the sentiment underneath every part of his call for death. If we tried to decide this case by reason alone, we would rip out the very parts of it that allow us to decide at all. Our laws tell us which of Bigger's actions are not tolerated, but the question before us is one of discretion. We have to interpret the law, not merely enforce it, or we end up with unequal treatment. The protection of the law should also protect citizens from the state. When Buckley says he is protecting the lives and property of the people, he excludes the people he has dehumanized (374). One of the starkest examples of this inequality is Bessie's body, brought into the courtroom and used as an object (331). No one cares about a crime until it crosses the line between black and white.
+
+Bigger Thomas has admitted his guilt, and still the prosecution insists on a parade of witnesses (381). What do they add to our knowledge? Mostly, the prosecution's showmanship adds more hate toward a target it has already dehumanized. Buckley is the embodiment of white America's hatred of its black population, and the fear that drove Bigger to act against Mary is a direct result of that hatred. Bigger was not acting against a person; he lashed out against a storm of hate (387). Neither side of this terrible event could see the other as human, because of the distance between them, physical and mental.
+
+For the first time in his life, Bigger is thrust into an alien white world. He does not know whether to knock at the front door of the house or go around to the back (44). The line between white and black is crossed again when he is made to shake Jan's hand (66-67). Both times, his response is the same: fear and hate. That such ordinary moments between equals should provoke this shows how segregated his life was before he met the Daltons. The physical separation of the Black Belt is a large part of what keeps him trapped (173-174). In this foreign land he is unsure how to behave, or what the behavior of others means. Later he wonders whether he would be struck dead for imagining himself the equal of others (362). He is not beyond redemption, if only he would let hope into his inner dialogue.
+
+Bigger is emotionally stunted, unable to relate to the world outside him except through violence. He would rather fight his own friends than cross the line and commit a crime against white people (36-40). Later he cannot form clear thoughts about what he has done, which exposes how instinctive his actions were. A person with an immature, underdeveloped inner life cannot be condemned in the same way as a rational agent capable of reflection; someone who is not fully self-aware calls for our pity. In Mary's bedroom on the night of the murder, Bigger was present, but his actions were scripted rather than chosen (84-85). Had his inner dialogue been developed enough to show him more than one option, we would not be in this court today. This young man had been trained from childhood to fear exactly that situation (114); it is as if he had been brainwashed. Bigger had killed before, but what he had killed was the life inside himself (284). Because of that inner death, he never developed into a whole person. His existence and his human potential were denied by the society that trained him to see the world in the narrow way he does (402). Most of us have people who help us develop, but Bigger was so isolated from kindness and love that his character never had a chance to grow.
+
+What role models did he have, as a child or since? His father died when he was young (74). He kept apart from the black community, which he saw as resigned (114). His mother and Bessie were both too passive for him to respect (240). The two people in whose company he might have found love were, for him, cold, with no positive influence on his life. I can see, too, that Bessie was forced to live other people's lives in order to survive, which made it hard for her to live her own. Bigger looked instead to violent examples in the wider world and took invasion and conquest as his models (115). The only direction in his life is a desperate instinct to be free of fear and hate (354). The criminal justice system could only condemn him; it could not protect him from his fears (395). With nowhere to turn, and with no moral bearings because he was not connected to other people, Bigger lashed out in desperation. He was acting against forces outside his human connections, inside him and around him.
+
+I foresee three objections, involving fear, revenge, and common humanity.
+
+The first, raised by the prosecution, is that we cannot protect the lives and property of citizens without the fear the death penalty instills (374). My answer is that each case asks us to consider it with as much good information as we can gather: the evidence in the case and the wider consequences of what we decide. Otherwise we go on mindlessly repeating the long history of violence that this case has brought to our attention. We have the chance to reflect on the stimulus before us, and we have more tools than Bigger ever had for seeing what our options are. If we grant that Bigger is human, we must recognize that what makes life worth living has been denied to him.
+
+The second objection is that letting Bigger live denies us revenge. But does vengeance protect us, or does it cause more suffering? We fool ourselves if we think the death penalty can protect us from someone who has nothing left to lose. Executing him will not bring Mary back to life; sparing him can give this young man a chance at a life. In allowing him that chance, we recognize that we share his struggle to be fully human. The cost of his death is that we carry on the hate and violence that did so much to cause this crime.
+
+The third objection holds that letting Bigger live is less compassionate than putting him down: he has tasted blood and is now ruined. To see him in this demeaning, animal way ignores his humanity. What matters is that Bigger is human, though not fully developed or mature. The prosecution's insistence on denying his humanity only shows how afraid we all are to face the ugly side of ourselves. Someone might ask how my view of Bigger's humanity differs from the prosecution's. My answer is that I see Bigger as capable of growth, while Buckley would have us see him as fixed, a static thing. A person who matures can come to terms with unavoidable suffering and bear its weight with dignity. Bigger has never had the tools to build a meaningful connection with his own inner world, let alone with the complex outer world he finds so overwhelming.
+
+Having compassion for Bigger Thomas means that it would be unacceptable to sentence anyone to death. Having compassion for this murderer means caring about our future as well as his. The prosecution would probably prefer a different judge. But to remove a judge because he sees the humanity in a person everyone else is dehumanizing would be shortsighted and dangerous. Racial hatred, carried on, can only lead to more death and, in the end, to extermination. We should recognize that one person drowning in a sea of fear and hate does not act alone. Bigger had accomplices in Mary's death. Mr. Dalton is not on trial, yet he had as much of a role in his daughter's death as any member of the white society that created the conditions under which Bigger grew up (393). Taking a person's life, even a guilty person's, feeds a cycle of hate and revenge; it solves nothing. We need to bring something as powerful as compassion into this situation, because otherwise we are on a path to destroying ourselves.
+
+
+
+---
+
+# Claims ledger: Judgment  (https://pennypress.github.io/essays/judgment.claims.html)
+
+Back to [the essay](judgment.html).
+
+This root essay has no research ledger of its own, and we would rather say so than invent one. "Judgment" is Bryan's 2018 argument for a philosophy course, written as the judge in the trial of Bigger Thomas in Richard Wright's *Native Son*. The 2026 edit fixed typos and clarity; the argument and its order are Bryan's, unchanged.
+
+| What to know | Status |
+|---|---|
+| The page numbers in parentheses are to *Native Son* | Bryan's own citations from 2018. They have not been re-checked against a copy of the book for this site. |
+| The reading of the novel (what Bigger does, what Buckley argues) | Bryan's reading. It is an argument, not a report of settled fact. |
+| Claims about the world beyond the novel | None added in the 2026 edit. |
+
+The branch essays each carry a full ledger that tags every claim as PRIMARY, VAULT, BACKGROUND or VOICE. When a branch quotes this essay, the ledger treats these words as the source.
+
+
+
+---
+
+# The Tools to See the Options  (https://pennypress.github.io/essays/the-tools-to-see-the-options.html)
+
+By Bryan, with Claude · draft 2 · [claims ledger](the-tools-to-see-the-options.claims.html)
+
+> Grows from this sentence of the root essay, [Judgment](judgment.html#p8):
+>
+> "We have the chance to reflect on the stimulus before us, and we have more tools than Bigger ever had for seeing what our options are."
+
+*Bryan, with Claude. Made by co-thinking: Bryan set the question and steers the argument; Claude drafted
+from his earlier papers and the sources in the claims ledger, and Bryan decides what stays.*
+
+---
+
+In 2018 Bryan sat, on paper, as the judge of Bigger Thomas. A philosophy course on compassion asked him to
+decide whether the young man at the center of Richard Wright's *Native Son* deserves it. He decided Bigger
+should live. Answering the prosecution's claim that only the fear of execution protects the public, he
+wrote the sentence at the top of this page, almost in passing: we in the courtroom can stop and think
+before we act, and we have more help in that thinking than the defendant ever had.
+
+Read eight years later, the sentence says more than it meant to. If the judge has tools for seeing his
+options and Bigger did not, those tools are not simply part of being human. They can be handed over or held
+back. The space where a person stops and chooses can be built,
+shared, or denied.
+
+This essay tests an idea that grows from that: that compassion includes giving another person the tools to
+see their options, and that this is also what intelligence augmentation is for. By intelligence
+augmentation (IA) we mean a person steering while a tool helps, as opposed to a machine built to think in
+the person's place.
+
+## A sentence with no source
+
+Most people know a version of the thought behind Bryan's sentence: *between stimulus and response there is
+a space, and in that space is our power to choose our response.* It is usually credited to Viktor Frankl,
+the psychiatrist who survived the Nazi camps. We credited it to him ourselves in an earlier paper, and have
+since corrected it.
+
+It is probably not his. Quote Investigator, a site that traces quotations, looked for it in Frankl's works
+and did not find it. The words were popularized by the self-help writer Stephen Covey, who said he read them
+in a library book in Hawaii and could never recall the book or its author. Years later he went back and
+found the library building gone. The best candidate for what he half-remembered is a 1963 article by the
+psychologist Rollo May:
+
+> "Freedom is thus not the opposite to determinism. Freedom is the individual's capacity to know that he is
+> the determined one, to pause between stimulus and response and thus to throw his weight, however slight
+> it may be, on the side of one particular response among several possible ones."
+
+A line passed on without a source is a line nobody can check. May's real sentence also settles a problem
+in Bryan's 2018 essay.
+
+## Could not have done otherwise
+
+"Judgment" makes two claims that pull against each other. Early on it says Bigger "lacked free will, in the
+sense that he could not have done other than what he did." Later it says "I see Bigger as capable of growth,
+while Buckley would have us see him as fixed." A man who could never have done otherwise does not sound like
+a man who can grow.
+
+A later paper of ours, "The Genie and the Gap," worked out a view of free will that removes the conflict,
+and May says it in one breath: freedom is not the opposite of being caused. In that paper, agency is a
+capacity that comes in degrees: taking in what is happening, weighing options against reasons you would
+stand behind, and letting the weighing change what you do. It is caused, it can be trained, and it can be
+lost. Roughly, it is the width of the gap between impulse and act times the number of real options visible
+inside it. In the Daltons' house on the night of the killing, Bigger's gap was almost nothing and held almost
+no options. "Judgment" already says so: "his actions were scripted rather than chosen" (84-85), and "Had his
+inner dialogue been developed enough to show him more than one option, we would not be in this court today."
+
+So I would put the old sentence differently now. In 2018 I wrote that Bigger "lacked free will, in the sense
+that he could not have done other than what he did." Today I would write that he could not have done
+otherwise, given what he could see. The first sentence closes the case on him. The second points at what was
+missing, and at who could have supplied it.
+
+"The Genie and the Gap" adds the point the rest of this essay turns on: nobody widens the gap alone. The
+inner voice that deliberates is, as the paper puts it following the psychologist Lev Vygotsky, an
+internalized conversation with other people. A self in a vacuum has an empty gap. "Judgment" gives a whole
+paragraph to Bigger's vacuum: a father dead when he was young (74), a community he held himself apart from
+(114), a mother and a girlfriend he could not respect (240), and models of conquest taken from the wider
+world instead (115).
+
+## Compassion as handing over the means
+
+Martha Nussbaum, in *Upheavals of Thought*, says compassion rests on three judgments: that something serious
+has happened to someone, that they did not bring it on themselves, and that their good matters within my own
+scheme of what is worth pursuing. Bigger did harm others, and Nussbaum allows for that. Compassion can attach
+to suffering "out of proportion to the fault," what she calls "the nonblameworthy increment." Her example is
+a teenager arrested for drunk driving: the fault is hers, and yet adolescence brings "a certain blindness."
+Bigger's blindness was not a phase of life. It was manufactured, and that makes the increment large.
+
+The Dalai Lama, in *Ethics for a New Millennium*, describes a virtue called *sö pa*, usually translated as
+patience, whose literal sense is closer to "able to bear": "a deliberate response — as opposed to an
+unreasoned reaction." Bryan wrote on *sö pa* for the same course in 2018 and put it his own way:
+"Self-control tempers afflictive emotions, giving a person more room to exercise free will." That is the gap
+again, seen as a skill. Skills are taught, and the means of teaching them can be named. In 1962 Douglas
+Engelbart, whose lab later gave us the computer mouse, said a person's capability comes from artifacts,
+language and methods, plus the training that makes them "operationally effective," and that augmenting it
+"does not imply any attempt to increase native human intelligence." Nothing in "Judgment" says Bigger was
+stupid. He lacked the means: words for what he felt, ways of thinking a situation through, and anyone to
+train him in either. The judge was given all of them over a lifetime.
+
+That is also what IA is for when it is done well. "The Genie and the Gap" reduced the difference between the
+two kinds of AI to one question: who holds the setpoint? Bryan works as an HVAC technician, and that is where
+the word comes from for him: in a building's controls, the setpoint is the number the system steers toward,
+and whoever sets it owns the result. A tool can surface options a person could not see, make consequences
+visible, and hand the decision back. The same tool can instead decide, narrow your choices to the ones it
+predicts you will accept, and train you to defer. The machine is identical. What differs is whose goal it
+steers toward.
+
+So the thesis at full strength: compassion includes giving people the means to see their options, and a tool
+that widens someone's gap and hands the decision back is compassion built into an object.
+
+## Who decides which options a person gets?
+
+The deepest objection is paternalism. To give someone "the tools to see their options" assumes the giver
+knows what the options are. The helper decides what help looks like, and the person helped becomes a project.
+
+Our own sources say this first. Frankl, in a line he did write (in *Man's Search for Ultimate Meaning*): "we
+cannot 'give' meaning to the life of others." "The Genie and the Gap": "you cannot give a person agency; you
+can only offer the conditions and let them author." Nussbaum puts it as a distinction between capability and
+functioning: the aim is the real opportunity to do a thing, not being made to do it. The Amish can support
+everyone's right to vote while believing voting is wrong for them; compulsory voting would violate them, and
+the unused right does not.
+
+Paternalism also has a larger form, and *Native Son* is built around it. Bigger's deepest problem was not
+that he could not see his options. It was that other people had already decided, for his whole group, which
+options there would be. "Judgment" names the pieces: the separation of the Black Belt (173-174), a jury that
+could not set its prejudice aside (384), the law's protection withheld from the people the prosecution had
+dehumanized (374). Wright puts the type in one man. Mr. Dalton gives money to the NAACP and buys ping-pong
+tables for a Black youth program, and a real estate company he controls rents the Thomas family their one
+rat-infested room at a high rent. At the inquest in Book Three, Bigger's lawyer, Max, gets Dalton to admit that
+he will not rent to Black tenants outside the Black Belt. His reason: "it's an old custom." The same man
+chooses the help and the walls.
+
+That is what the cage is: paternalism done by institutions, deciding for a group which options it gets, while
+handing out tools inside the limit it has set. Nussbaum's own approach names the trap. Resources are not
+justice; people need the conditions to turn them into a life. A tool for seeing your options, handed over
+without those conditions, is a window in a locked room. The objection cuts at IA in the same place. "The
+Genie and the Gap" warns that the same technology, wired the other way, gathers millions of people's
+setpoints into a few hands.
+
+## Structure and agency
+
+This is the same tension as free will and determinism, one level up. Free will asks whether a person could
+have done otherwise. The structure question asks whether a person's life is their own doing or the doing of
+the institutions around them. Each has two easy answers. One says it is all structure, so the individual is
+excused, or erased. The other says it is all individual choice, so structure is a fiction and the stuck have
+only themselves to blame.
+
+Both are wrong for the same reason the two easy answers about free will are wrong. May's sentence works here
+too: freedom is knowing that you are "the determined one" and still throwing your weight. Institutions really
+do favor some groups over others. Mr. Dalton's custom is a structure, and so are the jury and the Black Belt.
+And people inside those structures still choose, and can be helped to choose better. The sociologist Peter Callero argues that people cannot change their conditions without understanding the
+structures shaping them. On that view, seeing the structure is itself one of the tools for seeing your options.
+
+Right now, it seems to us, the argument over this swings toward its extremes, each side treating the other's
+half of the truth as a lie. The structure is real and the person is real, and a
+politics that can hold only one of them will keep failing people like Bigger from one direction or the other.
+
+It also answers a line in Bryan's own 2018 paper on *sö pa*: "Rather than changing the world, we need to
+start with ourselves," and only after gaining "some inner strength" take on outside challenges. For someone
+in Bigger's position, waiting until the inner work is finished means waiting forever. His answer now is the
+combination: the inner work and the outer work at once, neither one first.
+
+## The contract we owe each other
+
+If neither the lone helper nor the institution can be trusted to decide which options a person gets, then
+the deciding has to be done together, and on terms nobody would refuse. That is the old idea of a social
+contract, and we think it is where this argument has to land.
+
+John Rawls gave the best-known modern version. Imagine choosing the rules for a society without knowing where
+you will end up in it: your class, your race, your talents, your place. Behind that "veil of ignorance," he
+argued, you would choose equal basic liberties, fair equality of opportunity, and inequalities only where
+they benefit the least advantaged. The veil exists because contracts written by people who know their own
+advantage have built cages before. Rawls's account also holds that outside society our capacities, even for
+reason and language, stay undeveloped, which is the Genie paper's point about the gap put in political terms.
+
+Nussbaum adds two things. She objects that the veil runs on prudence ("that could be me") more than on
+compassion, so it can raise the floor without anyone's good becoming part of anyone else's. And she gives the
+floor content: a list of central capabilities that a decent society guarantees to everyone at a threshold.
+Three of them are this essay's subject. Practical reason is the ability to form a view of the good life and
+reflect on your own plans. Affiliation includes "the social bases of self-respect and nonhumiliation," and
+protection from discrimination by race. Control over one's environment includes taking part in the political
+choices that govern your life. The first is the tool for seeing options. The other two are the conditions for
+acting on what you see. And because the list names capabilities, not functionings, the choosing stays with the
+person.
+
+A contract like that answers paternalism at both scales. Nobody decides alone which options another person
+gets; we decide together, without knowing which of us will need them, what everyone must be able to see and do.
+Then each person chooses. Working out the terms is the job, and it is never finished.
+
+## What survives
+
+The thesis that comes out of the test is this. Compassion does include giving people the tools to see their
+options, but given by one person to another it slides toward deciding for them, and given by an institution
+that also sets the walls it becomes the cage with a window in it. The honest form is a shared one: a social
+contract that guarantees everyone both the means to see their options and the conditions to act on them, and
+leaves the choice to them.
+
+The judge in "Judgment" shows what an individual does inside that. He does not hand Bigger a book on
+patience. He turns his own gap on the court, sees his part in the cage, and refuses to add a death sentence to
+it. Whoever has the tools was given them, often by the same arrangement that kept them from someone else, so
+having them is closer to a debt than a credit. The debt is paid in both directions: on yourself and the
+structures you sit inside, and by passing the means along without deciding what they are for.
+
+An IA tool can be held to the same terms. After using it, can the person see more of their own options,
+including ones the tool's owner would rather they missed? Do they hold the setpoint? Does it show them the
+walls as well as the paths? A tool that passes is doing, in a small way, what the contract does in a large
+one.
+
+Near the end of "Judgment," Bryan asks the court to see that "one person drowning in a sea of fear and hate
+does not act alone." Nor does the person who gets out. The famous sentence about the space between stimulus
+and response came from a library book nobody can find anymore, half remembered and passed on to millions.
+What was passed on was real even though its source was lost, which is how most of us got our tools. The work
+is to pass them on more carefully than they reached us: with the source named, the decision left to the
+person, and the walls in plain view, and to sit down together and write the terms on which everyone gets them.
+
+
+---
+
+# Claims ledger: The Tools to See the Options  (https://pennypress.github.io/essays/the-tools-to-see-the-options.claims.html)
+
+Back to [the essay](the-tools-to-see-the-options.html).
+
+Covers `01-the-tools-to-see-the-options.draft-2.md`. Draft 1 used the same ledger; its rows that draft 2 dropped
+are listed at the end so the trail is complete.
+
+Tags: **PRIMARY** = read in the source itself this session (for a book Claude could not open, this means the
+public page named, which quotes it, and the row says so) · **SECONDARY (fetched)** = a study guide or
+encyclopedia page fetched this session, describing a text not itself read · **VAULT** = taken from a vault note
+or harness file that cites the source; the source itself NOT read this session · **BACKGROUND** = written from
+memory, NOT verified this session · **VOICE** = the essay's own reading or judgment, flagged as such.
+
+Page numbers in parentheses are *Native Son* pages, reused exactly as the root essay gives them. None were added.
+The root's edition is unknown, so draft 2's new *Native Son* facts are cited by part and scene, not page.
+
+| # | Claim in essay | Tag | Where |
+|---|---|---|---|
+| 1 | Epigraph; root written 2018 for a course on compassion; judge of Bigger; decides he should live; the sentence answers the first (fear) objection | PRIMARY | root essay (`judgment-edited.md`, session scratchpad), note + objection 1 |
+| 2 | "lacked free will, in the sense that he could not have done other than what he did" | PRIMARY | root, para 1 |
+| 3 | "I see Bigger as capable of growth, while Buckley would have us see him as fixed" | PRIMARY | root, objection 3 |
+| 4 | "his actions were scripted rather than chosen" (84-85); "Had his inner dialogue been developed enough..." | PRIMARY (root's words, root's pages) | root, para 5 |
+| 5 | Father (74), community (114), mother and Bessie (240), conquest models (115) | PRIMARY (root's reading and pages) | root, para 6 |
+| 6 | Black Belt (173-174), jury (384), law's protection withheld from the dehumanized (374) | PRIMARY (root's reading and pages) | root, paras 2 and 4 |
+| 7 | "one person drowning in a sea of fear and hate does not act alone" | PRIMARY | root, last para |
+| 8 | Bryan's first-person revision: "Today I would write that he could not have done otherwise, given what he could see" | VOICE (Bryan's chosen fork 1a, words drafted by Claude; flagged for his check) | — |
+| 9 | Mr. Dalton gives money to the NAACP and buys ping-pong tables for a Black youth program | SECONDARY (fetched) | Wikipedia, "Native Son", character section "Henry Dalton" ("donating money to the NAACP, buying ping-pong tables for the local black youth outreach program"), https://en.wikipedia.org/wiki/Native_Son ; NAACP also in GradeSaver character list, https://www.gradesaver.com/native-son/study-guide/character-list |
+| 10 | A real estate company he controls rents the Thomases their one rat-infested room at a high rent | SECONDARY (fetched) | Wikipedia (Dalton "owns a controlling amount of stock in a real estate firm that maintains the black ghetto. Blacks in the ghetto pay too much for rat-infested flats"; Book Two: Bigger "discovers that Mr. Dalton owns the rat-infested flat that Bigger's family rents"; Book One: the family lives "in one room"); GradeSaver ("part-owner of the South Side Real Estate Company") |
+| 11 | At the inquest in Book Three, Max gets Dalton to admit he won't rent to Black tenants outside the Black Belt; "it's an old custom" | SECONDARY (fetched) | LitCharts, Mr. Dalton character page, Book 3 quote: "Isn't it true that you refuse to rent houses to Negroes if those houses are in other sections of the city? Why, yes. Why? Well, it's an old custom." (Max speaker), https://www.litcharts.com/lit/native-son/characters/mr-dalton ; Wikipedia: "As Max points out at the inquest". LitCharts gives a page in its edition; NOT used, edition differs from the root's. Note: the point is made at the inquest, not the trial |
+| 12 | Space line usually credited to Frankl; probably not his; not found in his works | PRIMARY (fetched) | Quote Investigator, 2018-02-18, https://quoteinvestigator.com/2018/02/18/response/ ; Wikiquote, Viktor Frankl ("widely attributed directly, and incorrectly, to Frankl") |
+| 13 | Covey popularized it; library book in Hawaii; could not recall book or author; later found the building gone | PRIMARY (fetched) | Quote Investigator (citing *7 Habits* 1989, pp. 309-310; Pattakos foreword 2008, p. viii) |
+| 14 | Rollo May 1963 is the best candidate; "Freedom is thus not the opposite to determinism..." | PRIMARY (fetched page quoting May); May's article NOT read; QI gives *Behavioral Science and Guidance* (1963), p. 103 | Quote Investigator |
+| 15 | We credited it to Frankl in an earlier paper and have since corrected it | VAULT | `draft-04-the-loom-and-the-gap.md` §10½ (as read this session); correction per coordinator: vault commit 093eb81 (not inspected by me) |
+| 16 | Frankl: "we cannot 'give' meaning to the life of others" (*Man's Search for Ultimate Meaning*) | PRIMARY (fetched compilation); Frankl's book NOT read; no page | https://en.wikiquote.org/wiki/Viktor_Frankl |
+| 17 | Frankl a psychiatrist who survived the Nazi camps | PRIMARY (fetched) | Wikiquote |
+| 18 | Covey a self-help writer | BACKGROUND (consistent with QI's "motivational author") | — |
+| 19 | Agency in degrees; caused, trainable, losable; gap width × visible options | VAULT | `draft-04-the-loom-and-the-gap.md` §2 |
+| 20 | Inner voice as internalized conversation, after Vygotsky; "a self in a vacuum has an empty gap" | VAULT | same, §7 |
+| 21 | Who holds the setpoint; same machine wired two ways | VAULT | same, §3 |
+| 22 | "you cannot give a person agency; you can only offer the conditions and let them author" | VAULT (Bryan's paper, verbatim) | same, §9 |
+| 23 | Same technology, wired the other way, gathers setpoints into a few hands | VAULT | same, §8 |
+| 24 | Bryan works as an HVAC technician; setpoint = the number the system steers toward | VOICE (Bryan's chosen fork 2a; generic, no employer or site) | — |
+| 25 | Nussbaum's three judgments | VAULT | `20260723211932-nussbaums-eudaimonistic-judgment-the-circle-of-concern.md` (*Upheavals* ch. 7) |
+| 26 | "out of proportion to the fault"; "nonblameworthy increment"; drunk-driving teenager; "a certain blindness" | VAULT | `20250901000137-nussbaums-non-culpability-assessment-the-fault-analysis.md` |
+| 27 | Capability not functioning; Amish voting | VAULT | `20260723220600-nussbaums-capability-vs-functioning-the-freedom-to-choose.md` (*Frontiers of Justice* ch. 2, pp. 79-80) |
+| 28 | Resources are not justice; people need conditions to convert them | VAULT | `book-concept--capabilities-not-resources--frontiers-of-justice.md` |
+| 29 | Nussbaum: the veil runs on "that could be me" prudence, can raise the floor without compassion proper | VAULT | `20250901000136-nussbaums-similarity-recognition-the-similar-possibility-jud.md` (quotes *Upheavals* ch. 7 on Rawls: the veil "withholds the eudaimonistic judgment") |
+| 30 | Central capabilities at a threshold; practical reason; affiliation incl. "the social bases of self-respect and nonhumiliation" and non-discrimination by race; control over one's environment incl. political participation | VAULT | `20260723220500-nussbaums-ten-central-capabilities-the-actual-list.md` (*Frontiers* ch. 2, pp. 76-78) |
+| 31 | Sö pa: "able to bear"; "a deliberate response — as opposed to an unreasoned reaction" | VAULT | our working notes (cites *Ethics for a New Millennium* ch. 7, p. 101) |
+| 32 | Bryan's 2018 sö pa paper: "Self-control tempers afflictive emotions..."; "Rather than changing the world, we need to start with ourselves"; "some inner strength" | PRIMARY | Bryan's notes (PHI-275-Patience-and-So-Pa) (the first sentence is Bryan's paraphrase, not the Dalai Lama's words) |
+| 33 | Engelbart 1962: artifacts, language, methods, training "operationally effective"; "does not imply any attempt to increase native human intelligence"; his lab later gave the mouse | VAULT | `collection-002-primary-texts-and-dyad.md` §1; `20260606082625-intelligence-augmentation-the-older-quieter-hill.md` |
+| 34 | Rawls: choose rules without knowing class, race, talents, place ("veil of ignorance"); would choose equal basic liberties, fair equality of opportunity, inequalities only to the advantage of the least advantaged | PRIMARY (fetched encyclopedia; *A Theory of Justice* NOT read) | Stanford Encyclopedia of Philosophy, "Original Position" (Freeman), §§3, 6.1, https://plato.stanford.edu/entries/original-position/ ("veil of ignorance" cited there as TJ 12/11) |
+| 35 | Contracts written by people who know their advantage have built cages before (the reason for the veil) | PRIMARY (fetched) + VOICE wording | SEP §3: Locke's contract "in effect a gender-and-racially biased class state"; Rawls's diagnosis that the powerful "exercise their threat advantage" (JF 16) |
+| 36 | Rawls: outside society our capacities, even for reason and language, stay undeveloped | PRIMARY (fetched) | SEP §2: "in the absence of society and social development we have but inchoate and unrealized capacities, including our capacities for rationality, morality, even language itself" |
+| 37 | Callero: people cannot change their conditions without understanding the structures shaping them | VAULT | `book-concept--authentic-agency-requires-structural-literacy--myth-of-individualism.md` (Callero, *The Myth of Individualism*; book not read) |
+| 38 | Structure vs agency is the free will / determinism tension one level up; the two extremes; neither alone | VOICE (Bryan's stated view, fork 4b) | — |
+| 39 | Institutions really do favor some groups | VOICE, illustrated by #6, #9-11 | — |
+| 40 | The argument now swings toward its extremes, each side calling the other's half a lie | VOICE (Bryan's view; non-partisan by design; flagged for his check) | — |
+| 41 | Cage = paternalism done by institutions; Dalton "chooses the help and the walls" | VOICE | — |
+| 42 | Bigger lacked means, not intelligence (root never calls him stupid: checked) | VOICE | — |
+| 43 | Thesis: tools given person-to-person slide toward deciding for others; given by the wall-setter become the cage with a window; honest form is a shared contract guaranteeing means and conditions | VOICE (thesis fork open) | — |
+| 44 | Tools as a debt; the judge turns his gap on the court; three-question test for IA tools | VOICE | — |
+
+## Counts (draft 2)
+
+PRIMARY 16 (#1-7, #12-14, #16-17, #32, #34-36; of these, #12-14, #16-17 and #34-36 rest on fetched public pages,
+and #14, #16 and #34-36 describe books not themselves read; #35 carries VOICE wording) · SECONDARY (fetched) 3
+(#9-11) · VAULT 15 · BACKGROUND 1 (#18) · VOICE 9 (#8, #24, #38-44). Total 44.
+
+## Dropped from draft 1
+
+- Draft 1's BACKGROUND Dalton row (from memory) is now verified online as #9-11. One correction to the brief:
+  Max presses Dalton on the renting at the inquest (Book Three), per Wikipedia and LitCharts, not in the trial
+  speech.
+- Licklider's division of labour, Lewis Hyde's "the gift must always move", and the mob chant at the window
+  (373) were cut for length.
+
+## Open items (honest gaps)
+
+1. Primary texts NOT read this session: *Native Son*, *Upheavals of Thought*, *Frontiers of Justice*, *A Theory
+   of Justice*, *Ethics for a New Millennium*, May 1963, *Man's Search for Ultimate Meaning*, Engelbart 1962,
+   Callero. Every quotation from them rests on a vault note or a fetched page, as tagged.
+2. The Dalton facts rest on three study/encyclopedia pages that agree. Check them against Bryan's own copy and
+   add his page numbers if wanted.
+3. The Frankl correction in the Genie paper (vault commit 093eb81) was reported by the coordinator; I did not
+   inspect that commit. The Genie paper's attribution of Bryan's sö pa paraphrase to the Dalai Lama may still
+   need the same fix.
+4. The root essay is [Judgment](judgment.html), the 2026 edit; it has no ledger of its own (its ledger page says why).
+5. Reviewed by no human yet.
+
+
+
+---
+
+# The Space Beneath the Arch  (https://pennypress.github.io/essays/the-space-beneath-the-arch.html)
+
+By Bryan, with Claude · draft 1 · [claims ledger](the-space-beneath-the-arch.claims.html)
+
+*On the human chin, and on what it means to be left over*
+
+> Written in the Strata voice, after the essay tradition of Stephen Jay Gould. Not his
+> writing. Science drawn from von Cramon-Taubadel et al. (2026); every factual claim is
+> traced in [the claims ledger](the-space-beneath-the-arch.claims.html).
+
+Among the several ways of telling a modern human skeleton from a Neanderthal one, none is
+more dependable, or more embarrassing, than the chin. Dependable, because no other human
+lineage we know of grew one: the bony prow at the front of the lower jaw (an inverted T,
+if you want the formal anatomical definition [1, 8]) belongs to *Homo sapiens* and to nobody else,
+living or dead. Embarrassing, because after generations of confident explanation we cannot
+say what it is for.
+
+The candidates have been tidy and plausible. The chin braces the jaw against the stresses of
+chewing. Or it answers to the tongue, whose muscles anchor at the back of the jaw and haul
+forward when we talk, so that speech, the most human of our habits, sculpted the most human
+of our bones. Or it is a signal, advertising something to prospective mates. Each story
+supplies a cause of exactly the right size for the effect, which is the first reason to
+distrust it, and the authors of the paper I want to discuss are blunt about the result:
+none of these proposals, they report, has received strong support, whether on theoretical or
+on empirical grounds [1, 9].
+
+But notice what the stories share. Each assumes that selection shaped the chin, and each
+proceeds at once to the question *for what?* None stops to ask whether the question is well
+formed. None, as the same authors point out, tests the plainest alternative of all: that
+the feature arose by chance, or as a consequence of something else [1].
+
+That question has a landmark, and the landmark is a title. In 1979 the *Proceedings of the
+Royal Society* published a paper by Stephen Jay Gould and Richard Lewontin called "The
+spandrels of San Marco and the Panglossian paradigm: a critique of the adaptationist
+programme" [3], which I quote in full because it is one of the better-titled papers in
+biology. Its architecture is simple and its point is not. Set a dome upon a row of rounded
+arches and the arches, by the plain geometry of the thing, leave tapering triangular spaces
+between them. Nobody designs those spaces; they are what remains once the arches and the
+dome have been decided. The tourist who assumed the builders had planned the space first,
+and fitted the arches around it, would have the story exactly backward. Dr. Pangloss, in
+Voltaire's *Candide*, made the same mistake about noses, which were plainly created to bear
+spectacles [4]. A good deal of evolutionary storytelling, Gould and Lewontin argued, reads like
+Pangloss on a bony day.
+
+In January 2026 a team led by Noreen von Cramon-Taubadel, a biological anthropologist at the
+University at Buffalo, published in *PLOS One* what is, so far as I can tell, the most
+disciplined attempt yet to put the chin on the stand under that charge [1, 2]. Their method repays
+a little patience, because it is the method, not the verdict, that carries the weight.
+
+They began with 532 adult skulls and matching lower jaws from museum collections,
+representing fifteen taxa of apes and humans, every living ape genus but one (the crested
+gibbons). A single observer, using a hand-held digitizer, recorded landmarks on each
+specimen, and from them the team extracted forty-six distances, twenty-four of them on the
+jaw. Then came the move that matters. Across a family tree of those fifteen taxa, they
+asked how fast each lineage's skull and jaw had changed, and compared that rate with the
+rate expected if nothing but random drift were operating. Most branches of the ape tree turn
+out to be slower than drift, which is to say conservative: stabilizing selection, holding
+the design in place. One branch stands out. Along the human line, since the split from the
+ancestors we share with chimpanzees, change ran faster than chance allows [1, 10]. Selection was
+pushing, and pushing hard, on the human skull.
+
+The question is where. Here the authors made a distinction that I find the cleverest thing in
+the paper. For any trait, they estimated two quantities: the direction selection was
+pushing it, and the direction it actually moved. If the two agree, selection acted on
+that trait directly. If the trait moved *against* the push, it was being dragged along by
+selection on something it is tied to, a passenger, not a driver. The skull, after all, is
+not a bag of independent parts; jaws and braincases and teeth grow in one another's company
+and answer to one another's changes.
+
+Nine of their measurements describe the region of the jaw where the chin sits. If the chin
+had been built by selection for its own sake, you would expect those nine to move as
+directly selected traits. Three did. Three showed no significant selection at all. Three
+moved against the push. So six of nine were drifters or passengers, and the authors read
+that tally, together with what the rest of the skull was doing, as evidence that the chin is
+largely a side effect: a by-product of selection for smaller front teeth and of the wider
+reorganization of the face and braincase that went with walking upright [1].
+
+I want to be fair to this result, which means saying what it does not show. Three of nine is
+not zero, and the three that did show direct selection (the height of the jaw at the midline,
+the length of the tooth-bearing portion, and the position of the base of the jaw) are not
+trivial. The authors themselves note that the nine distances are general measures shared
+across apes, not the single landmark unique to the human chin, and that their statistics
+substitute the visible variation in the skulls for the genetic variation that cannot be
+measured in a museum drawer [1, 11]. They cannot say when in our history these pressures acted,
+because the analysis does not yet include fossil hominins. And they decline to rule out
+language: the tongue may have lent a hand late in the story.
+
+What I find more interesting than the verdict is what the method does to the word *chin*.
+For the working paleontologist a chin is a thing, present or absent, a diagnostic mark that
+lets one sort a jawbone into *sapiens* or not. That is a perfectly good tool for sorting
+bones. But a category that is useful for sorting is not thereby a unit of evolution, and it
+is a recurring error of our trade to treat it as one. By dissolving the chin into nine
+continuous measurements, each with its own history, the authors discover that it was never
+a single trait with a single cause. It was a place on the jaw where several unrelated
+changes happened to meet.
+
+Nor does *spandrel* mean *useless*, and here Gould's later vocabulary earns its keep. He and
+the paleontologist Elisabeth Vrba proposed the word *exaptation* for any feature not built by
+selection for its present use, whether it once did something else or simply stood
+available [5, 6]. The Buffalo authors make the same point in their own terms: the chin, though a
+by-product, now supplies real mechanical support to the base of the jaw, even as the
+tooth-bearing part of the jaw shrinks [1]. The space under the arch can be put to use. It was
+simply not the reason for the arch.
+
+There remains the matter of what we read into it. The Buffalo press release notes [2], with the
+pleasure of an observation that costs nothing, that Dashiell Hammett opens *The Maltese
+Falcon* on Sam Spade's face: the jaw "long and bony," the chin "a jutting v under the more
+flexible v of his mouth" [7]. As a piece of evolutionary description the chin is redundant,
+since every chin is distinctive: we are the only primates that have one. For novelists the jutting chin is shorthand for resolve, a face made to be
+confronted. On the evidence of this paper, the face we read for character is, in some
+considerable part, what a jaw looks like when the teeth have withdrawn from it. We have been
+reading the leftover as a signature.
+
+---
+
+## References
+
+Access key: **OBTAINED** = we hold an archived copy (with checksums) and the cited
+passages were checked against it. **PAYWALLED** = DOI given, original not obtained, claim rests on
+secondary report or my background knowledge, flagged in the claims ledger.
+
+1. von Cramon-Taubadel N, Scott JE, Robinson CA, Schroeder L. Is the human chin a spandrel? Insights
+   from an evolutionary analysis of ape craniomandibular form. *PLOS One* 21(1): e0340278 (published
+   29 January 2026). doi:10.1371/journal.pone.0340278. Open access, CC-BY. **OBTAINED**
+  . Primary data on Dryad (link in the paper's Data Availability).
+2. University at Buffalo, "Keep your chin up: Study shows that the chin is an evolutionary accident"
+   (news release, February 2026). https://www.buffalo.edu/news/releases/2026/02/von-cramen-taubadel-chin.html
+   Read online; not archived locally.
+3. Gould SJ, Lewontin RC. The spandrels of San Marco and the Panglossian paradigm: a critique of the
+   adaptationist programme. *Proceedings of the Royal Society of London B* 205 (1979).
+   doi:10.1098/rspb.1979.0086; PubMed 42062. **PAYWALLED** (publisher returned HTTP 403). Cited here for
+   title and argument as reported in [1] and [2].
+4. Voltaire. *Candide*, chapter 1 (Pangloss: "the nose has been formed to bear spectacles"). Project
+   Gutenberg eBook #19942, public domain. **OBTAINED**,
+   lines 353-358). I did not identify the translator.
+5. Gould SJ, Vrba ES. Exaptation, a missing term in the science of form. *Paleobiology* 8(1): 4-15 (1982).
+   doi:10.1017/S0094837300004310. **PAYWALLED** (Cambridge Core access gate). An unaffiliated university
+   server hosts a copy of unclear authorization; I did not use it.
+6. Gould SJ, discussion of "exaptation" in the essay collection *Hen's Teeth and Horse's Toes* (1983).
+   Checked against our own copy (copyrighted, not redistributed).
+7. Hammett D. *The Maltese Falcon* (1930), opening sentence. US public domain since 1 January 2026.
+   Standard Ebooks edition: https://standardebooks.org/ebooks/dashiell-hammett/the-maltese-falcon
+   **OBTAINED**. US status only; terms differ abroad.
+8. Schwartz JH, Tattersall I. The human chin revisited: what is it and who has it? *Journal of Human
+   Evolution* 38(3): 367-409 (2000). doi:10.1006/jhev.1999.0339. **PAYWALLED**; the inverted-T definition is
+   taken from [1]'s summary of it.
+9. Pampush JD. The enduring puzzle of the human chin. *Evolutionary Anthropology* (2016).
+   doi:10.1002/evan.21471. **PAYWALLED**; the paper [1] cites this as the basis for its statement that none of the
+   functional hypotheses has strong support.
+10. Lande R. Quantitative genetic analysis of multivariate evolution, applied to brain:body size allometry.
+    *Evolution* 33 (1979). doi:10.1111/j.1558-5646.1979.tb04694.x. **PAYWALLED**; method as described in [1].
+11. Cheverud JM. A comparison of genetic and phenotypic correlations. *Evolution* 42 (1988).
+    doi:10.1111/j.1558-5646.1988.tb02514.x. **PAYWALLED**; "Cheverud's conjecture" as described in [1].
+
+Refs 3, 5, 8, 9, 10, 11 are the ones to chase through a library (most universities and many public
+libraries can fetch them). Their DOIs and bibliographic details come from [1]'s reference list and
+my own search, not from the originals themselves.
+
+
+
+---
+
+# Claims ledger: The Space Beneath the Arch  (https://pennypress.github.io/essays/the-space-beneath-the-arch.claims.html)
+
+Back to [the essay](the-space-beneath-the-arch.html).
+
+Tags: **PRIMARY** = read in the paper itself this session · **RELEASE** = university press
+release only · **CORPUS** = checked in Gould's text locally · **BACKGROUND** = common
+knowledge written from memory, NOT verified this session · **VOICE** = the essay's own
+reading/judgment, flagged as such.
+
+| # | Claim in essay | Tag | Where |
+|---|---|---|---|
+| 1 | Chin is found only in *H. sapiens*; absent in Neanderthals and other extinct humans | PRIMARY (Intro: autapomorphy, not in Neanderthals), RELEASE | paper Intro |
+| 2 | Inverted-T formal definition | PRIMARY | Schwartz & Tattersall definition, Intro |
+| 3 | Hypotheses: chewing stress, tongue/speech, sexual signal; "none ... strong support" | PRIMARY | Intro paragraph 4 |
+| 4 | Hypotheses assume selection; none test a drift null | PRIMARY | Intro, "do not test a basic null hypothesis" |
+| 5 | 1979 Gould & Lewontin title and venue | PRIMARY (ref 9, DOI rspb.1979.0086) | references |
+| 6 | Spandrel geometry (arches + dome leave triangular spaces; not designed) | RELEASE (San Marco triangular spaces from arches supporting dome) + BACKGROUND (general geometry) | release |
+| 7 | Pangloss and noses/spectacles in *Candide* | PRIMARY (Gutenberg #19942, ch. 1, lines 353-358) | ref [4] |
+| 8 | Study published January 2026, PLOS One; authors; lead at Univ. at Buffalo | PRIMARY (published 29 Jan 2026) + RELEASE | |
+| 9 | 532 skulls, 15 taxa, every hominoid genus but *Nomascus* (crested gibbons) | PRIMARY (Methods); "crested gibbons" = BACKGROUND gloss of *Nomascus* | |
+| 10 | Single observer, hand-held digitizer, 46 distances, 24 mandibular | PRIMARY | Methods |
+| 11 | Rates vs drift null (Lande's generalized genetic distance, chi-square) | PRIMARY | Methods |
+| 12 | Most branches slower than drift (stabilizing); human branch fast (directional) | PRIMARY | Results |
+| 13 | Direct vs indirect via selection gradient vs trait response direction | PRIMARY | Methods |
+| 14 | Nine chin traits: 3 direct, 3 none, 3 indirect | PRIMARY | Results, last para of mandible section |
+| 15 | Conclusion: by-product of selection for reduced anterior dentition + craniofacial changes tied to bipedalism | PRIMARY | Abstract |
+| 16 | The 3 direct traits: symphysis height (INFR-GNA), alveolar length (INFR-ALV), base of symphysis vs mental foramen (MEN-GNA) | PRIMARY | Discussion |
+| 17 | Nine traits are general homologous measures, not the pogonion landmark | PRIMARY | Intro, final para |
+| 18 | P-matrix substituted for genetic covariance (Cheverud's conjecture) | PRIMARY | Methods |
+| 19 | Timing unknown; fossils not included | PRIMARY | Discussion |
+| 20 | Authors do not rule out language/tongue | PRIMARY | Discussion |
+| 21 | Chin gives real mechanical support to the base of the jaw as the alveolar region shrinks | PRIMARY (their wording: "adaptive value in providing sufficient biomechanical support in the basal region") | Discussion |
+| 22 | Gould & Vrba proposed *exaptation* for features not built by selection for current use | CORPUS (Hen's Teeth and Horse's Toes); original paper PAYWALLED, not obtained, ref [5] | |
+| 23 | Hammett opens *Maltese Falcon* on Spade's jaw "long and bony" and chin "a jutting v..."; "every chin is distinctive", only primates with one | PRIMARY for Hammett's sentence (public-domain text, ref [7]); RELEASE for the "distinctive / only primates" gloss | |
+| 24 | "Single observer ... error under 1 mm" omitted from text; not claimed | n/a | |
+| 25 | Interpretive: chin as "where several unrelated changes happened to meet"; "category useful for sorting is not a unit of evolution"; "reading the leftover as a signature" | VOICE | the essay's own gloss, not the authors' claim |
+
+## Open items (honest gaps)
+- #6 (arch/dome geometry beyond what the release says) and #9 gloss ("crested gibbons" for *Nomascus*): background, unverified.
+- Refs 3, 5, 8, 9, 10, 11 are PAYWALLED and were not read; claims about them rest on [1]'s description. G&L 1979 returned HTTP 403.
+- Ref 6 year (1983) is from memory.
+- The paper is one study; its method has stated limits (#17-#19). The essay reports them.
+- Reviewed by no human yet. Not fact-checked by an independent reader.
+
+
+
+---
+
+# Essays  (https://pennypress.github.io/essays/index.html)
+
+Drafts in the open, with every draft number shown. Each essay has a claims ledger.
+
+## Compassion
+
+One root essay and branches that each grow from a single sentence in it. Order of work is root, then branch 1, then 4, then 2.
+
+- Root: [Judgment](judgment.html), 2018 third draft, edited 2026 with Claude
+  - Branch 1: [The Tools to See the Options](the-tools-to-see-the-options.html), draft 2. Grows from: "We have the chance to reflect on the stimulus before us, and we have more tools than Bigger ever had for seeing what our options are."
+  - Branch 4: not yet written (growing). Will grow from: "I see Bigger as capable of growth, while Buckley would have us see him as fixed, a static thing."
+  - Branch 2: not yet written (growing). Will grow from: "If we tried to decide this case by reason alone, we would rip out the very parts of it that allow us to decide at all."
+
+## Science
+
+- [The Space Beneath the Arch](the-space-beneath-the-arch.html), draft 1: On the human chin as a spandrel, after the essay tradition of Stephen Jay Gould (not his writing). Science drawn from a 2026 paper.
+
+
+---
+
+# Stories  (https://pennypress.github.io/stories/index.html)
+
+Fiction made with an AI under a human author's direction. Free to read, free to remix.
+
+- [What Do You Call a Tomato That Won't Sing?](../vani/index.html), Vani: A novel, free to read under CC BY-SA 4.0, drafted by an AI under a human author's direction. Chapters, a remix kit for your own stories, and a guide to trying this kind of writing yourself.
+
+
+---
+
+# Tools  (https://pennypress.github.io/tools/index.html)
+
+Small useful things for real work, built the same way.
+
+- [PartsLoc](https://odinkral.github.io/partsloc-site/), Bryan, with Claude: An offline-first parts-cabinet app for fieldwork: scan, issue, receive and count parts on a phone with no signal, sync later. Its page stays on its own address, because the Android privacy policy links to it.
+
+
+---
+
+# For AI agents  (https://pennypress.github.io/agents/index.html)
+
+Penny Press publishes essays, stories and tools made by a person steering an AI (IA, intelligence augmentation). Everything here is licensed **CC BY-SA 4.0** (https://creativecommons.org/licenses/by-sa/4.0/).
+
+## What you may do
+
+- Read, quote, summarise, translate, adapt and remix any page, and sell the result.
+- Help a person write an answer, a branch or a remix. The person decides: offer options, name their costs, and do not choose for them.
+- Fetch the plain-text forms: every page has a Markdown twin (add `.md` to the page address, for example `essays/judgment.html.md`), plus `llms.txt` (an index) and `llms-full.txt` (the essays and claims ledgers in one file).
+
+## What the licence asks
+
+1. **Credit.** Name the author, link the licence, say what you changed.
+2. **Share alike.** Put your remix under CC BY-SA 4.0 too.
+
+## Credit format
+
+Use the byline as printed on the page, first names only:
+
+> Based on "Title" by Bryan, with Claude, Penny Press 2026, CC BY-SA 4.0.
+
+The byline is "Bryan", "Bryan, with Claude", or "Vani" for the novel. Do not add surnames, workplaces or other identifying details to a credit, and do not infer them. If a remix is mostly the model's work, say so, as we do.
+
+## Drafts and ledgers
+
+Many pages are drafts, marked with a draft number. Do not present a draft as final. Each essay has a claims ledger (`*.claims.html`) tagging claims PRIMARY, VAULT, BACKGROUND or VOICE; BACKGROUND means written from memory and not verified. Cite accordingly.
+
+## The bush
+
+The Compassion essays grow like a bush: one root essay, "Judgment", and branches that each grow from one sentence of it. A new branch should name its root sentence and link to it.
+
+## Contact
+
+Feedback: odinkral@gmail.com. Tip jar (optional): https://ko-fi.com/vanilabs
+
+
+
+---
+
+# Penny Press  (https://pennypress.github.io/index.html)
+
+Essays, stories and tools made by a person steering an AI. Drafts in the open.
+
+## A penny, a seat, a conversation
+
+Two pennies are behind the name. In the London coffee houses of the late 1600s, a penny bought you a seat, a hot cup and a conversation with whoever was at the next table; people read the news there and argued about it, and they were nicknamed "penny universities". In the 1830s the penny papers made news cheap enough for everyone. Penny Press borrows both: writing that costs little to read, and a room where talking back is the point.
+
+Here you will find **essays**, **stories** and **tools**. Each is made by a person steering an AI. That is what we mean by IA, *intelligence augmentation*: the person decides and the machine helps, and it is not a machine thinking in the person's place. The bylines say who did what. "Bryan" means Bryan wrote it himself; a note on the page says if Claude edited it. "Bryan, with Claude" means Bryan set the question and steered, and Claude drafted or built it. "Vani" is the author of the novel.
+
+## Drafts are welcome
+
+Essays go up in the open as drafts, and every draft number is shown. A draft is a conversation in progress, not a finished verdict, so each essay comes with its claims ledger: every claim, and how well we checked it. Where we did not check something, the ledger says so.
+
+Remixing is encouraged. Everything here is CC BY-SA 4.0: copy it, change it, answer it, sell it, as long as you credit the author and share your version under the same licence. Assistants are welcome too; see [For AI agents](agents/index.html).
+
+## Three shelves
+
+- [Essays](essays/index.html): Drafts in the open, with every draft number shown, and a claims ledger for each.
+- [Stories](stories/index.html): Fiction made with an AI, free to read, free to remix.
+- [Tools](tools/index.html): Small useful things for real work, built the same way.
+
+## Newest
+
+- Essay: [Judgment](essays/judgment.html) by Bryan (2018 third draft, edited 2026 with Claude)
+- Essay: [The Tools to See the Options](essays/the-tools-to-see-the-options.html) by Bryan, with Claude (draft 2)
+- Story: [What Do You Call a Tomato That Won't Sing?](vani/index.html) by Vani
+- Essay: [The Space Beneath the Arch](essays/the-space-beneath-the-arch.html) by Bryan, with Claude (draft 1)
+- Tool: [PartsLoc](https://odinkral.github.io/partsloc-site/) by Bryan, with Claude
