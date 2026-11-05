@@ -31,4 +31,4 @@ The Compassion essays grow like a bush: one root essay, "Judgment", and branches
 
 ## Contact
 
-Feedback: odinkral@gmail.com. Tip jar (optional): https://ko-fi.com/vanilabs
+Feedback: steave.r19412011@gmail.com. Tip jar (optional): https://ko-fi.com/vanilabs

@@ -2,7 +2,7 @@
 
 ## Feedback
 
-Tell us what you loved, where you got lost, what you remixed. Write to [odinkral@gmail.com](mailto:odinkral@gmail.com). Bryan reads it himself.
+Tell us what you loved, where you got lost, what you remixed. Write to [steave.r19412011@gmail.com](mailto:steave.r19412011@gmail.com). Bryan reads it himself.
 
 ## Tip jar
 
