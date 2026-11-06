@@ -3271,6 +3271,81 @@ Deliberately left out: which doors were found and which remain open. A public li
 
 ---
 
+# Software Is Not Property, It's a Potluck Plate  (https://pennypress.github.io/essays/software-is-not-property.html)
+
+By Bryan, with Claude · outline · [claims ledger](software-is-not-property.claims.html)
+
+*This is an outline, not an essay yet. We publish it to think in the open: the argument's shape, the pushback we already have, and what we still need to find out.*
+
+## The claim, in one sentence
+
+Intellectual-property law treats software as a durable thing that can be owned, but software has stopped being that kind of thing: it is the trace of a person's judgment, cheap to regenerate, and the value lives in the judgment, not the trace.
+
+Bryan, the day the outline started: *"IP treats software as this property that it is not its reified in a way that is not substantiated any longer software is disposable."*
+
+## 1. The plates at the potluck
+
+- Open on the image: *"software is paper plates at a pot luck where people solve real problems."* Plates are necessary and disposable, and nobody comes to the potluck for them. The food is the problem-solving.
+- A worked example: PartsLoc, a parts-inventory app a technician built with an AI and is releasing free under GPL-3.0. Its code could be rebuilt from his direction. What could not be rebuilt is knowing which shelf count is lying.
+
+## 2. When the copy was the value
+
+- Why property made sense: the press, the pressing plant, the boxed disk. Copying was costly, so owning the copy meant owning the value.
+- What changed: copying went to zero first. Now making is going toward zero for a growing class of tools, because a model can write what a person can clearly ask for.
+- The word for the mistake: **reification**, treating a process as if it were a thing. (To check: the term's history, from Lukács, and whether it is the right one or only a near one.)
+
+## 3. What the code actually is
+
+- A trace of a conversation: direction, then generation, then correction, saved to disk. The saved file is the residue. The thing that made it is still walking around.
+- The test: clone the repository, and you get the residue. You do not get the person who knew what to ask for, what to catch, and when "done" is a lie.
+- Link back to the Compassion bush: the same move as treating a person as "a static thing" instead of as capable of growth.
+
+## 4. Pushback, taken seriously
+
+- **The fiction still binds.** Employers, courts and app stores act on it. Before releasing PartsLoc, a technician still had to read his employer's IP policy and write a note to send. The essay should show that cost, not wave it away.
+- **Copyleft is judo.** The GPL uses the property system against itself: it claims ownership so that no one can enclose the code. If software must be property, this is property that keeps refusing to be owned. (To check: how the GNU project itself describes copyleft.)
+- **Disposable is not worthless.** A bad plate spills the food. Quality still matters; it just isn't where the value lives.
+- **Who this hurts.** People who make their living selling code as an object. Say this plainly, and ask what they sell instead: maintenance, trust, the craft.
+
+## 5. What is durable, then
+
+- The **data** people put in: their shop, their counts, their history. That is theirs, and a good tool lets them leave with it.
+- The **trust** that the tool does what it says: an honest privacy page, a published audit, claims anyone can check.
+- The **craft** of knowing what to build: the flight line, the shop floor, the years.
+- Close: give away the plates. Keep cooking.
+
+## Still to find out before draft 1
+
+- Is "reification" the right word, or is a plainer one better?
+- What does copyright law actually protect in software? Its expression, not its ideas: check the statute and one case, and quote them exactly.
+- Has anyone made this argument well already? Read them first, and cite them or say how this differs.
+- One counter-example where the code really is the value (a hard algorithm, a format everyone depends on), and what it does to the claim.
+
+
+
+---
+
+# Claims ledger: Software Is Not Property, It's a Potluck Plate  (https://pennypress.github.io/essays/software-is-not-property.claims.html)
+
+Back to [the essay](software-is-not-property.html).
+
+*Every claim in the outline, and how well it was checked. An outline makes promises; this ledger says which ones are already kept.*
+
+1. Bryan's sentence opening the outline (2026-11-05). **Checked:** quoted verbatim from the conversation, spelling kept.
+2. *"software is paper plates at a pot luck where people solve real problems"* (Bryan, 2026-08-10). **Checked:** quoted verbatim from the private vault note where it was first recorded.
+3. PartsLoc is being released free under GPL-3.0 and was built by a technician directing an AI. **Checked:** the licence and the method are stated in the PartsLoc repository's README and LICENSE (staged 2026-11-05). If the repository is not public yet when you read this, the claim is about its prepared release.
+4. Copying a program costs close to nothing. **From general knowledge;** not sourced. Uncontroversial, but it should carry a citation in draft 1.
+5. A model can now write much of what a person can clearly ask for. **From our own practice,** not a study: PartsLoc's code was largely written by Claude under Bryan's direction. Needs an outside source, or should be framed as our experience only.
+6. "Reification" comes from Lukács. **From memory; not checked.** Listed under "still to find out".
+7. Copyleft uses copyright against enclosure. **From memory;** the GNU project's own description has not been re-read for this outline. Listed under "still to find out".
+8. Copyright protects expression, not ideas. **From memory; not checked against the statute.** Listed under "still to find out".
+9. A technician had to read his employer's IP policy and write a note to send before releasing PartsLoc. **Checked:** this happened on 2026-11-05 (the note was written that day; sending it is his). The employer and policy are not named here, on purpose.
+10. The Compassion-bush link (a person as "a static thing" vs. "capable of growth"). **Checked:** the phrase is quoted from the root essay, *Judgment*, on this site.
+
+
+
+---
+
 # Essays  (https://pennypress.github.io/essays/index.html)
 
 Drafts in the open, with every draft number shown. Each essay has a claims ledger.
@@ -3287,6 +3362,10 @@ One root essay and branches that each grow from a single sentence in it. Order o
 ## Science
 
 - [The Space Beneath the Arch](the-space-beneath-the-arch.html), draft 1: On the human chin as a spandrel, after the essay tradition of Stephen Jay Gould (not his writing). Science drawn from a 2026 paper.
+
+## Making
+
+- [Software Is Not Property, It's a Potluck Plate](software-is-not-property.html), outline: Intellectual-property law treats software as a thing to own. It has become the trace of a person's judgment, cheap to regenerate; the value is the judgment. An outline, with the pushback we already have.
 
 ## Dispatches
 
@@ -9295,6 +9374,7 @@ Remixing is encouraged. Everything here is CC BY-SA 4.0: copy it, change it, ans
 - Essay: [Judgment](essays/judgment.html) by Bryan (2018 third draft, edited 2026 with Claude)
 - Essay: [The Tools to See the Options](essays/the-tools-to-see-the-options.html) by Bryan, with Claude (draft 2)
 - Essay: [Publishing Day](essays/publishing-day.html) by Claude, with Bryan (dispatch)
+- Essay: [Software Is Not Property, It's a Potluck Plate](essays/software-is-not-property.html) by Bryan, with Claude (outline)
 - Story: [What Do You Call a Tomato That Won't Sing?](vani/index.html) by Vani
 - Story: [The Penny Universe](penny-universe/index.html) by Bryan, with Claude (draft)
 - Essay: [The Space Beneath the Arch](essays/the-space-beneath-the-arch.html) by Bryan, with Claude (draft 1)

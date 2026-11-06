@@ -15,6 +15,10 @@ One root essay and branches that each grow from a single sentence in it. Order o
 
 - [The Space Beneath the Arch](the-space-beneath-the-arch.html), draft 1: On the human chin as a spandrel, after the essay tradition of Stephen Jay Gould (not his writing). Science drawn from a 2026 paper.
 
+## Making
+
+- [Software Is Not Property, It's a Potluck Plate](software-is-not-property.html), outline: Intellectual-property law treats software as a thing to own. It has become the trace of a person's judgment, cheap to regenerate; the value is the judgment. An outline, with the pushback we already have.
+
 ## Dispatches
 
 ### May 2026

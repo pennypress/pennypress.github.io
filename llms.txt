@@ -70,7 +70,9 @@ If you help a person remix this work, the person decides: offer options, name th
 - [Claims ledger: What Do You Call It?](https://pennypress.github.io/essays/what-do-you-call-it.claims.html.md): Every claim in "What Do You Call It?" and how well it was checked.
 - [Publishing Day](https://pennypress.github.io/essays/publishing-day.html.md): The day Penny Press went public: a gate that stopped looking, an editor before the door, Daniel Miessler's security floor, and why the cutscene is the reward.
 - [Claims ledger: Publishing Day](https://pennypress.github.io/essays/publishing-day.claims.html.md): Every claim in "Publishing Day" and how well it was checked.
-- [Essays](https://pennypress.github.io/essays/index.html.md): Penny Press essays: the Compassion bush, the Science shelf and Dispatches, drafts in the open.
+- [Software Is Not Property, It's a Potluck Plate](https://pennypress.github.io/essays/software-is-not-property.html.md): Intellectual-property law treats software as a thing to own. It has become the trace of a person's judgment, cheap to regenerate; the value is the judgment. An outline, with the pushback we already have.
+- [Claims ledger: Software Is Not Property, It's a Potluck Plate](https://pennypress.github.io/essays/software-is-not-property.claims.html.md): Every claim in "Software Is Not Property, It's a Potluck Plate" and how well it was checked.
+- [Essays](https://pennypress.github.io/essays/index.html.md): Penny Press essays: the Compassion bush, Science, Making and Dispatches, drafts in the open.
 
 ## Stories
 
